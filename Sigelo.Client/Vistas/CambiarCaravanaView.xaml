@@ -1,0 +1,235 @@
+﻿<local:PageBase x:Class="Icoltrans.Sigelo.Win.Vehiculos.CambiarCaravanaView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Icoltrans.Sigelo.Win.Vehiculos"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" KeepAlive="False" d:DesignHeight="730" d:DesignWidth="1008" mc:Ignorable="d">
+    <local:PageBase.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
+        <local:ConvertidorReporte x:Key="convertidorReporte" />
+    </local:PageBase.Resources>
+    <Page.DataContext>
+        <local:CambiarCaravanaViewModel />
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.71*" />
+            <ColumnDefinition Width="0.54*" />
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.027,0.518" EndPoint="1.002,0.52">
+                <GradientStop Offset="0" Color="#F9FFFFFF" />
+                <GradientStop Offset="1" Color="#F9FFFFFF" />
+                <GradientStop Offset="0.5" Color="White" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock Grid.ColumnSpan="2" Margin="15,15,15,0" VerticalAlignment="Top" FontSize="64" Foreground="#FFBCBCBC" Text="Cambio de Caravana" TextWrapping="Wrap" />
+        <Path Grid.RowSpan="4" Width="0.68" HorizontalAlignment="Right" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round">
+            <Path.Stroke>
+                <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                    <GradientStop Offset="0" Color="#00D4D4D4" />
+                    <GradientStop Offset="0.5" Color="#FFD4D4D4" />
+                    <GradientStop Offset="1" Color="#00D4D4D4" />
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>
+        <!--  Informacion Caravana Actual  -->
+        <StackPanel Grid.Row="1" Margin="20">
+            <TextBlock FontSize="20" FontWeight="Bold" Foreground="Gray" Text="CARAVANA ORIGEN" />
+            <TextBlock Margin="5">
+                <Run FontSize="18" FontWeight="Bold"
+                     Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.fvcDescripcion,
+                                    Mode=OneWay}" />
+                <LineBreak />
+                <Run FontSize="13" FontWeight="Bold"
+                     Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.TipoCaravana,
+                                    Mode=OneWay}" />
+                <Run FontSize="13" Text=":" />
+                <Run FontSize="13" Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.ruta, Mode=OneWay}" />
+                <LineBreak />
+                <Run FontSize="12" Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.origen, Mode=OneWay}" />
+                <Run FontSize="12" Text=" - " />
+                <Run FontSize="12" Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.destino, Mode=OneWay}" />
+                <LineBreak />
+                <Run FontSize="12" Text="UTIMO REPORTE: " />
+                <Run FontSize="12" Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.fvcUltimoPunto, Mode=OneWay}" />
+                <Run FontSize="12" Text=", " />
+                <Run FontSize="12" Text="{Binding Path=CaravanaSeleccionada.Model.Caravana.fdtUltimoPunto, Mode=OneWay, Converter={StaticResource convertidorReporte}}" />
+            </TextBlock>
+        </StackPanel>
+        <TabControl Grid.Row="2" Margin="20">
+            <TabItem Header="Vehiculos">
+                <local:ControlListaVehiculos />
+            </TabItem>
+            <TabItem Header="Conductores">
+                <local:ControlListaConductores />
+            </TabItem>
+            <TabItem Header="Carga">
+                <local:ControlListaCarga />
+            </TabItem>
+        </TabControl>
+        <!--  Informacion Del Cambio  -->
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Margin="0,0,10,0">
+            <!--  Cambio de ruta  -->
+            <StackPanel Visibility="{Binding MostrarRuta, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Margin="10" FontSize="20" FontWeight="Bold" Foreground="Gray" Text="TIPO" />
+                <StackPanel Margin="15,0" Orientation="Horizontal">
+                    <RadioButton x:Name="NacionalRadioButton" Content="Nacional" FontSize="16" Foreground="Gray" GroupName="TipoCaravana"
+                                 IsChecked="{Binding NacionalSeleccionada,
+                                                     Mode=TwoWay}"
+                                 x:FieldModifier="private" />
+                    <RadioButton x:Name="RegionalRadioButton" Margin="15,0" Content="Regional" FontSize="16" Foreground="Gray" GroupName="TipoCaravana"
+                                 IsChecked="{Binding RegionalSeleccionada,
+                                                     Mode=TwoWay}"
+                                 x:FieldModifier="private" />
+                    <RadioButton x:Name="UrbanaRadioButton" Content="Urbana" FontSize="16" Foreground="Gray" GroupName="TipoCaravana"
+                                 IsChecked="{Binding UrbanaSeleccionada,
+                                                     Mode=TwoWay}"
+                                 x:FieldModifier="private" />
+                </StackPanel>
+                <TextBlock Margin="5" FontSize="20" FontWeight="Bold" Foreground="Gray" Text="RUTA" />
+                <ComboBox x:Name="RutaComboBox" Margin="15,0"
+                          ItemContainerStyle="{StaticResource ListBoxItemStyle}"
+                          ItemsSource="{Binding Path=Rutas,
+                                                Mode=OneWay}"
+                          SelectedValue="{Binding Path=RutaSeleccionada,
+                                                  Mode=TwoWay}"
+                          Style="{StaticResource ComboBoxStyle}"
+                          TextSearch.TextPath="Descripcion" x:FieldModifier="private">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock FontSize="16" Text="{Binding Descripcion}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <!--  Cambio de Nombre  -->
+            <StackPanel Visibility="{Binding Path=MostrarCambiarNombre, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock x:Name="CaravanaTextBlock" Margin="5" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Gray" Text="Nuevo nombre de la caravana" TextTrimming="WordEllipsis"
+                           x:FieldModifier="private" />
+                <local:ControlNombreCaravana />
+            </StackPanel>
+            <!--  Lista de caravanas  -->
+            <StackPanel Visibility="{Binding Path=MostrarListaCaravanas, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Margin="5" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Gray" Text="Caravanas disponible" TextTrimming="WordEllipsis" />
+                <ComboBox VerticalAlignment="Top"
+                          ItemContainerStyle="{StaticResource ListBoxItemStyle}"
+                          ItemsSource="{Binding Path=CaravanasDisponibles,
+                                                Mode=OneWay}"
+                          SelectedItem="{Binding Path=CaravanaDestino,
+                                                 Mode=TwoWay}"
+                          Style="{StaticResource ComboBoxStyle}"
+                          TextSearch.TextPath="fvcDescripcion">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Margin="0,4">
+                                <Run FontWeight="Bold" Text="{Binding fvcDescripcion}" />
+                                <LineBreak />
+                                <Run Text="{Binding Ruta}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <!--  Lista de carnets disponibles  -->
+            <StackPanel Visibility="{Binding Path=MostrarListaCarnets, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Margin="5" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Gray" Text="Carnets disponibles" TextTrimming="WordEllipsis" />
+                <ComboBox VerticalAlignment="Top"
+                          ItemContainerStyle="{StaticResource ListBoxItemStyle}"
+                          ItemsSource="{Binding Path=VehiculosCambio,
+                                                Mode=OneWay}"
+                          SelectedItem="{Binding Path=VehiculoCambio,
+                                                 Mode=TwoWay}"
+                          Style="{StaticResource ComboBoxStyle}"
+                          TextSearch.TextPath="Destinos">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Margin="0,4">
+                                <Run FontWeight="Bold" Text="{Binding Destinos}" />
+                                <LineBreak />
+                                <Run Text="{Binding finNumeroCarnet}" />
+                                <Run Text=" - " />
+                                <Run Text="{Binding Trailer}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <!--  Mensaje de ayuda  -->
+            <TextBlock Margin="5,5,15,5" FontSize="16" FontWeight="Bold" Foreground="#FF919191"
+                       Text="{Binding Path=MensajeOperacion}"
+                       TextAlignment="Justify" TextWrapping="Wrap" />
+        </StackPanel>
+        <!--  Botones  -->
+        <StackPanel Grid.Row="3" Grid.Column="0" Height="50" Margin="70,0,71,25" HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button Width="104" Margin="2" Background="Black"
+                    Command="{Binding Path=CambiarNombreCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding HabilitarCambiaNombre}"
+                    Style="{StaticResource FilterButtonStyle}"
+                    d:LayoutOverrides="Width">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Cambiar Nombre" TextAlignment="Center" TextWrapping="Wrap" />
+            </Button>
+
+            <Button Width="104" Margin="2" Background="Black"
+                    Command="{Binding Path=CambiarRutaCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding HabilitarCambiarRuta}"
+                    Style="{StaticResource FilterButtonStyle}"
+                    d:LayoutOverrides="Width">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Cambiar Ruta" TextAlignment="Center" TextWrapping="Wrap" />
+            </Button>
+            <Button Width="104" Margin="2" Background="Black"
+                    Command="{Binding Path=UnirCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding HabilitarUnir}"
+                    Style="{StaticResource FilterButtonStyle}"
+                    d:LayoutOverrides="Width">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Unir" TextAlignment="Center" TextWrapping="Wrap" />
+            </Button>
+            <Button Width="104" Margin="2" Background="Black"
+                    Command="{Binding Path=DividirCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding HabilitarDividir}"
+                    Style="{StaticResource FilterButtonStyle}"
+                    d:LayoutOverrides="Width">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Dividir" TextAlignment="Center" TextWrapping="Wrap" />
+            </Button>
+            <Button Width="104" Margin="2" Background="Black"
+                    Command="{Binding Path=CambiarCarnetCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding HabilitarCambiarCarnet}"
+                    Style="{StaticResource FilterButtonStyle}"
+                    d:LayoutOverrides="Width">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Carnet" TextAlignment="Center" TextWrapping="Wrap" />
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Height="50" Margin="109,0,108,25" HorizontalAlignment="Center" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button Width="104" Background="#FFB42727"
+                    Command="{Binding CancelCommand}"
+                    Style="{StaticResource FilterButtonStyle}">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Cancelar" TextAlignment="Center" />
+            </Button>
+            <Rectangle Width="1" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.500095,-0.00311067" EndPoint="0.500095,0.994881">
+                        <GradientStop Offset="0.00436681" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.49345" Color="#CBBABABA" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button MinWidth="104" Margin="3,3,0,3" Background="#FF499B2C"
+                    Command="{Binding GrabarCommand,
+                                      Mode=OneWay}"
+                    IsEnabled="{Binding Path=HabilitarGrabar,
+                                        Mode=OneWay}"
+                    Style="{StaticResource FilterButtonStyle}">
+                <TextBlock VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" Text="Guardar" TextAlignment="Center" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</local:PageBase>

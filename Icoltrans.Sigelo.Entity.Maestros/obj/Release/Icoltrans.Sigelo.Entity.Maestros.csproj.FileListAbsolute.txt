@@ -1,0 +1,11 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll.config
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\obj\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\obj\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\obj\Release\Icoltrans.Sigelo.Entity.Maestros.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\obj\Release\Icoltrans.Sigelo.Entity.Maestros.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Maestros\obj\Release\Icoltrans.Sigelo.Entity.Maestros.dll

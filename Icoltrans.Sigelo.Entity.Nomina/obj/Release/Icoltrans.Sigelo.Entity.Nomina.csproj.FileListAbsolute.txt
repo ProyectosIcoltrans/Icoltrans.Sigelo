@@ -1,0 +1,11 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll.config
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\obj\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\obj\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\obj\Release\Icoltrans.Sigelo.Entity.Nomina.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\obj\Release\Icoltrans.Sigelo.Entity.Nomina.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Nomina\obj\Release\Icoltrans.Sigelo.Entity.Nomina.dll

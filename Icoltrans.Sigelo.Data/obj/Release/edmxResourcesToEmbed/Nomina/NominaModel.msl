@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <Alias Key="Model" Value="NominaModel" />
+  <Alias Key="Target" Value="NominaModel.Store" />
+  <EntityContainerMapping CdmEntityContainer="NominaModelo" StorageEntityContainer="NominaModelStoreContainer">
+    <FunctionImportMapping FunctionImportName="EmpleadosGrupoCargo" FunctionName="NominaModel.Store.stpQryEmpleadosGrupoCargo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Nomina.Escolta1">
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

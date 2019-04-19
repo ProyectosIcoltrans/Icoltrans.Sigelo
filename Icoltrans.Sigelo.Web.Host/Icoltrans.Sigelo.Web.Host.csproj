@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9CF01A7-A17B-4822-8FFB-F0152C1422B6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Icoltrans.Sigelo.Web.Host</RootNamespace>
+    <AssemblyName>Icoltrans.Sigelo.Web.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <DeployIisAppPath>Default Web Site/Icoltrans.Sigelo.Web.Host</DeployIisAppPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Icoltrans.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mg32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Icoltrans.Sigelo.Web.Host.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mg32x32.ico" />
+    <Content Include="ServicioVehiculos.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dto\DetalleCaravana.cs" />
+    <Compile Include="Dto\ParametrosIniciales.cs" />
+    <Compile Include="If\IServicioVehiculos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioVehiculos.svc.cs">
+      <DependentUpon>ServicioVehiculos.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Comunes\Icoltrans.Sigelo.Comunes.csproj">
+      <Project>{3279BA80-147C-4A5C-96F2-61BF22ADF5BC}</Project>
+      <Name>Icoltrans.Sigelo.Comunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Maestros\Icoltrans.Sigelo.Entity.Maestros.csproj">
+      <Project>{229e3de7-da68-4069-b6e7-2545575de18c}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Maestros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Nomina\Icoltrans.Sigelo.Entity.Nomina.csproj">
+      <Project>{d6cb3a4e-6611-4047-8324-9d4958515b5e}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Nomina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Produccion\Icoltrans.Sigelo.Entity.Produccion.csproj">
+      <Project>{223de8dd-6e4d-4316-a5b8-9c65b0ad6b66}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Produccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Seguridad\Icoltrans.Sigelo.Entity.Seguridad.csproj">
+      <Project>{45475063-788c-4f1a-855a-d75cba835647}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Vehiculos\Icoltrans.Sigelo.Entity.Vehiculos.csproj">
+      <Project>{50bd3fbb-c79f-4a7e-b5e2-40c4d1988a80}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Vehiculos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Rules.Maestros\Icoltrans.Sigelo.Rules.Maestros.csproj">
+      <Project>{171BB5E5-A151-400C-9945-C01536ED3936}</Project>
+      <Name>Icoltrans.Sigelo.Rules.Maestros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Rules.Nomina\Icoltrans.Sigelo.Rules.Nomina.csproj">
+      <Project>{4655C8A5-C552-4E29-BE34-32F0018CC1B5}</Project>
+      <Name>Icoltrans.Sigelo.Rules.Nomina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Rules.Produccion\Icoltrans.Sigelo.Rules.Produccion.csproj">
+      <Project>{395A589A-1B52-4087-BC98-864399BA0E88}</Project>
+      <Name>Icoltrans.Sigelo.Rules.Produccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Rules.Seguridad\Icoltrans.Sigelo.Rules.Seguridad.csproj">
+      <Project>{054140a7-4f65-4820-99ec-da422ab2729d}</Project>
+      <Name>Icoltrans.Sigelo.Rules.Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icotrans.Sigelo.Rules.Vehiculos\Icoltrans.Sigelo.Rules.Vehiculos.csproj">
+      <Project>{69EE1A64-7384-4318-9A19-9B66025BF757}</Project>
+      <Name>Icoltrans.Sigelo.Rules.Vehiculos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icoltrans.snk" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>50336</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Icoltrans.Sigelo.Web.Host</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Icoltrans.Sigelo.Rules.ComProxy</name>
+    </assembly>
+    <members>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosNovedades.IniciarRecorrido(System.Guid,System.DateTime,System.Guid)">
+            <summary>
+            Iniciars the recorrido.
+            </summary>
+            <param name="vaCaravana">The va caravana.</param>
+            <param name="dtHora">The dt hora.</param>
+            <param name="vaPunto">The va punto.</param>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosNovedades.FinalizarRecorrido(System.Guid,System.DateTime)">
+            <summary>
+            Finalizars the recorrido.
+            </summary>
+            <param name="vaCaravana">The va caravana.</param>
+            <param name="dtHora">The dt hora.</param>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosNovedades.ReporteCarretera(System.Guid,System.Int32,System.DateTime,System.Int16,System.Int16,System.String,System.String,System.Guid[])">
+            <summary>
+            Reportes the carretera.
+            </summary>
+            <param name="idCaravana">The identifier caravana.</param>
+            <param name="idPuntoRuta">The identifier punto ruta.</param>
+            <param name="horaReporte">The hora reporte.</param>
+            <param name="idEstadoVehiculo">The identifier estado vehiculo.</param>
+            <param name="idRazon">The identifier razon.</param>
+            <param name="nombreRazon">The nombre razon.</param>
+            <param name="ubicacion">The ubicacion.</param>
+            <param name="idPuntoEntrega">The identifier punto entrega.</param>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+    </members>
+</doc>

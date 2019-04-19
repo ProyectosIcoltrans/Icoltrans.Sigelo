@@ -1,0 +1,47 @@
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Web.Host.Testing.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Web.Host.Testing.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Web.Host.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Data.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\EntityFramework.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\DapperExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\EFExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Interop.rveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Interop.ADOR.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Web.Host.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Vehiculos.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Maestros.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Seguridad.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Data.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\EntityFramework.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\DapperExtensions.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Dapper.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\bin\Debug\Icoltrans.Sigelo.Web.Host.Testing.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host.Testing\obj\Debug\Icoltrans.Sigelo.Web.Host.Testing.pdb

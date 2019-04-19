@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Nomina" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Nomina" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CiudadDpto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesCargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesCentro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesCompania" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DesSucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCOperativo" type="xs:short" />
+      <xs:element minOccurs="0" name="IdPunto" type="ser:guid" />
+      <xs:element minOccurs="0" name="NomEmpleado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fidRol" type="ser:guid" />
+      <xs:element minOccurs="0" name="fnuIdentidad" type="xs:decimal" />
+      <xs:element minOccurs="0" name="fsmCentroCosto" type="xs:short" />
+      <xs:element minOccurs="0" name="fsmIdArea" type="xs:short" />
+      <xs:element minOccurs="0" name="fsmIdCargo" type="xs:short" />
+      <xs:element minOccurs="0" name="fsmIdSucursal" type="xs:short" />
+      <xs:element minOccurs="0" name="ftyIdCompania" type="xs:short" />
+      <xs:element minOccurs="0" name="fvcIDUbicacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="ArrayOfEscolta1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Escolta1" nillable="true" type="tns:Escolta1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEscolta1" nillable="true" type="tns:ArrayOfEscolta1" />
+  <xs:complexType name="Escolta1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cedula" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Escolta1" nillable="true" type="tns:Escolta1" />
+</xs:schema>

@@ -1,0 +1,8 @@
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\Icoltrans.Sigelo.Data.Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\Icoltrans.Sigelo.Data.Dapper.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\DapperExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\Dapper.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\bin\Debug\DapperExtensions.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\obj\Debug\Icoltrans.Sigelo.Data.Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Data.Dapper\obj\Debug\Icoltrans.Sigelo.Data.Dapper.pdb

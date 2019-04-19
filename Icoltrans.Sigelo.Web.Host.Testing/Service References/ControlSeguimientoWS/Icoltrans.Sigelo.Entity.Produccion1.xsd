@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfPuntoEntrega">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuntoEntrega" nillable="true" type="tns:PuntoEntrega" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuntoEntrega" nillable="true" type="tns:ArrayOfPuntoEntrega" />
+  <xs:complexType name="PuntoEntrega">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cant" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CiudadDpto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Conductor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Origen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Punto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiglaNovedad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fdtCompromisoCliente" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fdtEntrega" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fdtHoraFinal" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fdtHoraInicial" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fidOperacion" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="finTipoNovedad" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="finUnidades" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fnuManifiesto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="frlPeso" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="frlVolumen" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fvcCartaPorte" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDescripcionNovedad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcFactura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcIDUbicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcPlaca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcPlacaComplemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idCentro" nillable="true" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuntoEntrega" nillable="true" type="tns:PuntoEntrega" />
+  <xs:complexType name="PuntosEntregasCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PuntosEntregas" nillable="true" type="tns:ArrayOfPuntoEntrega" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuntosEntregasCaravana" nillable="true" type="tns:PuntosEntregasCaravana" />
+  <xs:complexType name="PuntosEntregaCaravana2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PuntosEntrega" nillable="true" type="tns:ArrayOfPuntoEntrega2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuntosEntregaCaravana2" nillable="true" type="tns:PuntosEntregaCaravana2" />
+  <xs:complexType name="ArrayOfPuntoEntrega2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuntoEntrega2" nillable="true" type="tns:PuntoEntrega2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuntoEntrega2" nillable="true" type="tns:ArrayOfPuntoEntrega2" />
+  <xs:complexType name="PuntoEntrega2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fidPuntoEntrega" type="ser:guid" />
+      <xs:element minOccurs="0" name="finUnidades" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fnuManifiesto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="frlKilos" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fsmOrden" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fvcCodigoEDI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcTelefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuntoEntrega2" nillable="true" type="tns:PuntoEntrega2" />
+</xs:schema>

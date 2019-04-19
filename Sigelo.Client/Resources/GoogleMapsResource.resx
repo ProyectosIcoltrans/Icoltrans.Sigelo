@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IFrame" xml:space="preserve">
+    <value>&lt;!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; 
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; 
+&lt;head&gt; 
+	&lt;title&gt;&lt;/title&gt; 
+	&lt;script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAONGnFL0kcCdyn5RUHzY_mBRd4ruDrR6G_7td499m6HnvNnWrUhQMTo0N5R0CRkmVPONFKqYMqY6_oA"&amp;sensor=false"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+	
+		var map = null;
+		
+		var marcadores = [];
+				
+		var point = null;
+		
+		var cargado = false;
+	
+		function inicializar_mapa() 
+		{
+			try
+			{ 
+				if (GBrowserIsCompatible()) 
+				{         
+					map = new GMap2(document.getElementById("map_canvas"));
+								
+					map.setCenter(new GLatLng(4.683192, -74.091797), 6);
+					map.addControl(new GLargeMapControl());
+				
+					cargado = true;
+				}  
+			}
+			catch(error)
+			{
+			}
+		}
+		
+		function agregar_punto(latitud, longitud, placa, descripcion, ruta, velocidad, hora)
+		{
+			try
+			{
+				if(cargado)
+				{
+					point = new GLatLng(latitud, longitud);
+	
+					var marker = new GMarker(point);
+				
+					GEvent.addListener(marker, "click", function() 
+					{ 
+						marker.openInfoWindowHtml('&lt;div style="font-size: 14px"&gt;&lt;b style="font-size: 16px"&gt;' + placa + '&lt;/b&gt;&lt;/br&gt;&lt;a&gt;' + descripcion + '&lt;/a&gt;&lt;br/&gt;&lt;a&gt;' + ruta + '&lt;/a&gt;&lt;br/&gt;&lt;a&gt;Velocidad: ' + velocidad + ' Km/h&lt;/a&gt;&lt;br/&gt;&lt;a&gt;Latitud: ' + latitud + '&lt;/a&gt;&lt;a&gt; Longitud: ' + longitud + '&lt;/a&gt;&lt;br/&gt;&lt;a&gt;' + hora + '&lt;/a&gt;&lt;/div&gt;'); 
+					});
+     			
+     				map.addOverlay(marker);
+     		
+     				marcadores.push(marker);
+     			}
+     		}
+     		catch(error)
+     		{
+     		}
+		}
+		
+		function refrescar()
+		{
+			try
+			{
+				if(cargado)
+				{
+					if(marcadores.length &gt; 1)
+					{
+						map.setCenter(map.getBounds(), map.getBoundsZoomLevel());
+					}
+					else if(marcadores.length == 0)
+					{
+						map.setCenter(new GLatLng(4.683192, -74.091797), 6);
+					}
+					else if(marcadores.length == 1)
+					{
+						map.setCenter(point, 15);
+					}
+				}
+			}
+			catch(error)
+			{
+			}
+		}
+		
+		function limpiar()
+		{
+			try
+			{
+				if(cargado)
+				{
+					if(marcadores.length &gt; 0)
+					{
+						for(i in marcadores)
+						{
+							map.removeOverlay(marcadores[i]);
+						}
+			
+						marcadores.length = 0;
+					}
+				}
+			}
+			catch(error)
+			{
+			}
+		}
+		
+	&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body onload="inicializar_mapa()" onunload="GUnload()" scroll="no"&gt;
+	&lt;div id="map_canvas" style="width: myWidthpx; height: myHeightpx; left: 0px; top: 0px; position: absolute;"&gt;
+	&lt;/div&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="IFrame2" xml:space="preserve">
+    <value>https://www.sonaravl.com/AVLServer/qmap.aspx?user=srendon&amp;pwd=s1stemas&amp;placa=&amp;alertas={0}&amp;cmd=flota</value>
+  </data>
+</root>

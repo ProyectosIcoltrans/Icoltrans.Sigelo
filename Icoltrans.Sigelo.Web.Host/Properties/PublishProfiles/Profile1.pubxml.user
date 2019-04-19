@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2013-05-07T06:31:46.1849443-05:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>D:\Publicaciones\Icoltrans.SigeloWebHostFinal</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ADODB.dll">
+      <publishTime>03/15/2017 15:06:54</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>09/22/2016 21:34:16</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.dll">
+      <publishTime>09/22/2016 21:46:24</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.pdb">
+      <publishTime>09/22/2016 21:46:24</publishTime>
+    </File>
+    <File Include="bin/EFExtensions.dll">
+      <publishTime>11/04/2013 11:23:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/27/2014 08:05:57</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Comunes.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Data.dll">
+      <publishTime>09/01/2017 13:37:39</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Maestros.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Nomina.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Produccion.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Seguridad.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Vehiculos.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.ComProxy.dll">
+      <publishTime>09/01/2017 13:37:41</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Maestros.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Maestros.pdb">
+      <publishTime>11/04/2013 16:33:20</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Nomina.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Nomina.pdb">
+      <publishTime>11/04/2013 16:33:19</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Produccion.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Produccion.pdb">
+      <publishTime>11/04/2013 16:33:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Seguridad.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Vehiculos.dll">
+      <publishTime>09/01/2017 13:37:42</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Web.Host.dll">
+      <publishTime>09/01/2017 13:37:42</publishTime>
+    </File>
+    <File Include="bin/Interop.ADOR.dll">
+      <publishTime>09/01/2017 09:32:04</publishTime>
+    </File>
+    <File Include="bin/Interop.dprod_Consultas.dll">
+      <publishTime>10/30/2013 07:27:32</publishTime>
+    </File>
+    <File Include="bin/Interop.rveh_Vehiculos.dll">
+      <publishTime>09/01/2017 09:32:05</publishTime>
+    </File>
+    <File Include="Mg32x32.ico">
+      <publishTime>01/27/2014 08:05:57</publishTime>
+    </File>
+    <File Include="ServicioVehiculos.svc">
+      <publishTime>01/27/2014 08:05:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/01/2017 13:37:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

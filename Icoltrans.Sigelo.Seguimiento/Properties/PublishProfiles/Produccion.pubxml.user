@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Publicaciones\Sigelo.ControlSeguimiento</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Dapper.dll">
+      <publishTime>09/22/2016 21:34:16</publishTime>
+    </File>
+    <File Include="bin/DapperExtensions.dll">
+      <publishTime>09/22/2016 21:46:24</publishTime>
+    </File>
+    <File Include="bin/EFExtensions.dll">
+      <publishTime>11/04/2013 11:23:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/27/2014 08:05:57</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Comunes.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.ControlSeguimiento.dll">
+      <publishTime>09/01/2017 14:03:52</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Data.dll">
+      <publishTime>09/01/2017 13:37:39</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Maestros.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Nomina.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Produccion.dll">
+      <publishTime>09/01/2017 09:32:17</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Seguridad.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Entity.Vehiculos.dll">
+      <publishTime>09/01/2017 09:32:18</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.ComProxy.dll">
+      <publishTime>09/01/2017 14:03:51</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Maestros.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Nomina.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Produccion.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Seguridad.dll">
+      <publishTime>09/01/2017 13:37:40</publishTime>
+    </File>
+    <File Include="bin/Icoltrans.Sigelo.Rules.Vehiculos.dll">
+      <publishTime>09/01/2017 14:03:51</publishTime>
+    </File>
+    <File Include="bin/Interop.ADOR.dll">
+      <publishTime>09/01/2017 09:32:04</publishTime>
+    </File>
+    <File Include="bin/Interop.rveh_Vehiculos.dll">
+      <publishTime>09/01/2017 09:32:05</publishTime>
+    </File>
+    <File Include="ServicioVehiculos.svc">
+      <publishTime>09/01/2017 13:54:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/01/2017 14:03:52</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

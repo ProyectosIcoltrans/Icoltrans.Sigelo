@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEB02490-3B46-494B-A897-293492601D3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Icoltrans.Sigelo.Win.Vehiculos</RootNamespace>
+    <AssemblyName>Icoltrans.Sigelo.Win.Vehiculos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\10.3.1.28\c%24\inetpub\wwwroot\instaladores\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.3.1.28/instaladores/</InstallUrl>
+    <UpdateUrl>http://10.3.1.28/instaladores/</UpdateUrl>
+    <SupportUrl>http://controlit</SupportUrl>
+    <ErrorReportUrl>http://controlit</ErrorReportUrl>
+    <TargetCulture>es-CO</TargetCulture>
+    <ProductName>Control de Seguimiento</ProductName>
+    <PublisherName>Icoltrans SAS</PublisherName>
+    <SuiteName>Sigelo.Net</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>instalar.htm</WebPage>
+    <ApplicationRevision>38</ApplicationRevision>
+    <ApplicationVersion>5.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Icoltrans.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoIcoltrans32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>467ECD2C1D34EEA532EFBCCF2B1C7A6ECDD80717</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Icoltrans.Sigelo.Win.Vehiculos_3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="InfragisticsWPF4.DataPresenter.v12.2, Version=12.2.20122.2022, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Editors.v12.2, Version=12.2.20122.2022, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.v12.2, Version=12.2.20122.2022, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Code\AsyncWebBrowser.cs" />
+    <Compile Include="Code\BuscarPlacaMapaEventArgs.cs" />
+    <Compile Include="Code\IFiltrosCaravana.cs" />
+    <Compile Include="Controles\ControlGridView.xaml.cs">
+      <DependentUpon>ControlGridView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlMensaje.xaml.cs">
+      <DependentUpon>ControlMensaje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlNombreCaravana.xaml.cs">
+      <DependentUpon>ControlNombreCaravana.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Convertidores\ConvertidorAutorizacion.cs" />
+    <Compile Include="Convertidores\ConvertidorDataItem.cs" />
+    <Compile Include="Convertidores\ConvertidorFondoColorEstado.cs" />
+    <Compile Include="Convertidores\ConvertidorVisibleVehiculoPorSalir.cs" />
+    <Compile Include="Resources\Mensajes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mensajes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Servicio.Vehiculos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioVehiculos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VistaModelos\CambiarCaravanaViewModel.cs" />
+    <Compile Include="VistaModelos\ControlCarreteraViewModel.cs" />
+    <Compile Include="VistaModelos\EscoltaYFuncionViewModel.cs" />
+    <Compile Include="VistaModelos\RefuerzoYFuncionViewModel.cs" />
+    <Compile Include="VistaModelos\SatelitalViewModel.cs" />
+    <Compile Include="Vistas\CambiarCaravanaView.xaml.cs">
+      <DependentUpon>CambiarCaravanaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ControlCarreteraView.xaml.cs">
+      <DependentUpon>ControlCarreteraView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Contexto.cs" />
+    <Compile Include="Code\Enumeradores.cs" />
+    <Compile Include="Code\PageBase.cs" />
+    <Compile Include="Code\SmartDispatcher.cs" />
+    <Compile Include="Controles\ControlProgreso.xaml.cs">
+      <DependentUpon>ControlProgreso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlError.xaml.cs">
+      <DependentUpon>ControlError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlMarcador.xaml.cs">
+      <DependentUpon>ControlMarcador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlMapa.xaml.cs">
+      <DependentUpon>ControlMapa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Convertidores\ConvertidorCitaEntrega.cs" />
+    <Compile Include="Convertidores\ConvertidorColorCita.cs" />
+    <Compile Include="Convertidores\ConvertidorEntrega.cs" />
+    <Compile Include="Convertidores\ConvertidorReporte.cs" />
+    <Compile Include="Convertidores\ConvertidorSiguienteReporte.cs" />
+    <Compile Include="Convertidores\ConvertidorTipoVehiculo.cs" />
+    <Compile Include="Convertidores\ConvertidorUltimoReporte.cs" />
+    <Compile Include="Convertidores\ConvertidorPrioridad.cs" />
+    <Compile Include="Convertidores\ConvertidorVehiculoPorSalir.cs" />
+    <Compile Include="Convertidores\ConvertidorColorEstado.cs" />
+    <Compile Include="Model\Extensiones.cs" />
+    <Compile Include="Resources\GoogleMapsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoogleMapsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaModelos\BaseOpcionesViewModel.cs" />
+    <Compile Include="VistaModelos\CambioNombreViewModel.cs" />
+    <Compile Include="VistaModelos\CaravanasViewModel.cs" />
+    <Compile Include="VistaModelos\CrearCaravanaViewModel.cs" />
+    <Compile Include="VistaModelos\DelegateCommand.cs" />
+    <Compile Include="VistaModelos\EscoltasViewModel.cs" />
+    <Compile Include="VistaModelos\FinRecorridoViewModel.cs" />
+    <Compile Include="VistaModelos\InicioRecorridoViewModel.cs" />
+    <Compile Include="VistaModelos\RefuerzosViewModel.cs" />
+    <Compile Include="VistaModelos\SeguimientoViewModel.cs" />
+    <Compile Include="VistaModelos\ViewModelBase.cs" />
+    <Compile Include="Vistas\CaravanasView.xaml.cs">
+      <DependentUpon>CaravanasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaCarga.xaml.cs">
+      <DependentUpon>ControlListaCarga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaConductores.xaml.cs">
+      <DependentUpon>ControlListaConductores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaEscoltas.xaml.cs">
+      <DependentUpon>ControlListaEscoltas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaPuntosEntrega.xaml.cs">
+      <DependentUpon>ControlListaPuntosEntrega.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaPuntosReporte.xaml.cs">
+      <DependentUpon>ControlListaPuntosReporte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ControlListaVehiculos.xaml.cs">
+      <DependentUpon>ControlListaVehiculos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CrearCaravanaView.xaml.cs">
+      <DependentUpon>CrearCaravanaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EscoltasView.xaml.cs">
+      <DependentUpon>EscoltasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FinRecorridoView.xaml.cs">
+      <DependentUpon>FinRecorridoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InicioRecorridoView.xaml.cs">
+      <DependentUpon>InicioRecorridoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\NavegationView.xaml.cs">
+      <DependentUpon>NavegationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RefuerzosView.xaml.cs">
+      <DependentUpon>RefuerzosView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\SatelitalView.xaml.cs">
+      <DependentUpon>SatelitalView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controles\ControlGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\ControlMensaje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\ControlNombreCaravana.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\CambiarCaravanaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\ControlCarreteraView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\ControlProgreso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\ControlError.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlMarcador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\ControlMapa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Vistas\CaravanasView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaCarga.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaConductores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaEscoltas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaPuntosEntrega.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaPuntosReporte.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\ControlListaVehiculos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\CrearCaravanaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\EscoltasView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\FinRecorridoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\InicioRecorridoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\NavegationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\RefuerzosView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vistas\SatelitalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GoogleMapsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GoogleMapsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Mensajes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mensajes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Icoltrans.Sigelo.Win.Vehiculos_1_TemporaryKey.pfx" />
+    <None Include="Icoltrans.Sigelo.Win.Vehiculos_2_TemporaryKey.pfx" />
+    <None Include="Icoltrans.Sigelo.Win.Vehiculos_3_TemporaryKey.pfx" />
+    <None Include="Icoltrans.Sigelo.Win.Vehiculos_TemporaryKey.pfx" />
+    <None Include="Icoltrans.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Resources\vehiculos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mg32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\article-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\floppy_mount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\kthememgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LogoIcoltrans32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\preferencial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\text-editor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.CaravanaDisponible.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.ConductoresCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.DetalleCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.Escolta1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.EscoltaCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.EscoltasCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.FuncionEscolta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.ParametrosIniciales.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.PuntosEntregaCaravana2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.PuntosEntregasCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.RazonEstado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.Refuerzo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.RefuerzoCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.ReporteCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.ReportesYEstados.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.Ruta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.Satelital.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.Seguimiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.VehiculoPorSalir.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.VehiculoSatelital.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\Icoltrans.Sigelo.Win.Vehiculos.Servicio.Vehiculos.VehiculosCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos1.wsdl" />
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos101.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos102.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos103.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos104.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos105.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos106.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos107.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos108.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Servicio.Vehiculos\ServicioVehiculos109.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.CaravanaDisponible.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.ConductoresCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.DetalleCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.Escolta1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.EscoltaCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.EscoltasCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.FuncionEscolta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.ParametrosIniciales.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.PuntosEntregaCaravana2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.PuntosEntregasCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.RazonEstado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.Refuerzo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.RefuerzoCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.ReporteCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.ReportesYEstados.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.Ruta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.Satelital.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.Seguimiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.VehiculoPorSalir.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.VehiculoSatelital.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\Icoltrans.Sigelo.Win.Vehiculos.ServicioVehiculos.VehiculosCaravana.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos.wsdl" />
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Servicio.Vehiculos\" />
+    <WCFMetadataStorage Include="Service References\ServicioVehiculos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Servicio.Vehiculos\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Servicio.Vehiculos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Servicio.Vehiculos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LogoIcoltrans32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Comunes\Icoltrans.Sigelo.Comunes.csproj">
+      <Project>{3279ba80-147c-4a5c-96f2-61bf22adf5bc}</Project>
+      <Name>Icoltrans.Sigelo.Comunes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\drawable-ldpi-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\search-icon-png-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioVehiculos\ServicioVehiculos.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioVehiculos\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioVehiculos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioVehiculos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

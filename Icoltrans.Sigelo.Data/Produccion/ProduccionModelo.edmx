@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModeloProduccion.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ModeloProduccionStoreContainer"/>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Produccion" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ProduccionModelo" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        </EntityContainer>
+        <ComplexType Name="PuntoEntrega">
+          <Property Type="Int32" Name="Id" Nullable="false"  />
+          <Property Type="String" Name="fnuManifiesto" Nullable="true" />
+          <Property Type="String" Name="fvcPlaca" Nullable="true" />
+          <Property Type="String" Name="fvcPlacaComplemento" Nullable="true" />
+          <Property Type="String" Name="Conductor" Nullable="true" />
+          <Property Type="String" Name="Origen" Nullable="true" />
+          <Property Type="String" Name="Destino" Nullable="true" />
+          <Property Type="Int16" Name="idCentro" Nullable="true" />
+          <Property Type="String" Name="fvcNombre" Nullable="true" />
+          <Property Type="String" Name="fvcIDUbicacion" Nullable="true" />
+          <Property Type="String" Name="CiudadDpto" Nullable="true" />
+          <Property Type="Guid" Name="fidOperacion" Nullable="true" />
+          <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+          <Property Type="String" Name="fvcCartaPorte" Nullable="true" />
+          <Property Type="String" Name="fvcFactura" Nullable="true" />
+          <Property Type="DateTime" Name="fdtCompromisoCliente" Nullable="true" />
+          <Property Type="String" Name="Punto" Nullable="true" />
+          <Property Type="String" Name="fvcDireccion" Nullable="true" />
+          <Property Type="Double" Name="frlPeso" Nullable="true" />
+          <Property Type="Double" Name="frlVolumen" Nullable="true" />
+          <Property Type="Int32" Name="finUnidades" Nullable="true" />
+          <Property Type="Int32" Name="Cant" Nullable="true" />
+          <Property Type="DateTime" Name="fdtHoraInicial" Nullable="true" />
+          <Property Type="DateTime" Name="fdtHoraFinal" Nullable="true" />
+          <Property Type="Int32" Name="finTipoNovedad" Nullable="true" />
+          <Property Type="String" Name="fvcDescripcionNovedad" Nullable="true" />
+          <Property Type="DateTime" Name="fdtEntrega" Nullable="true" />
+          <Property Type="String" Name="SiglaNovedad" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Operacion">
+          <Property Type="Guid" Name="fidOperacion" Nullable="false" />
+          <Property Type="Int32" Name="finIdLote" Nullable="false" />
+          <Property Type="Int32" Name="finIdServicioNegocio" Nullable="false" />
+          <Property Type="DateTime" Name="fdtFecha" Nullable="false" />
+          <Property Type="Guid" Name="fidPuntoEntregaOrigen" Nullable="true" />
+          <Property Type="Guid" Name="fidPuntoEntregaDestino" Nullable="true" />
+          <Property Type="DateTime" Name="fdtCompromisoCliente" />
+          <Property Type="DateTime" Name="fdtCitaEntrega" />
+          <Property Type="Decimal" Name="fnuRemision" Precision="18" Scale="0" />
+          <Property Type="String" Name="fvcCartaPorte" MaxLength="20" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="fvcFactura" MaxLength="20" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="DateTime" Name="fdtFechaFactura" />
+          <Property Type="String" Name="fvcPedido" MaxLength="20" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="DateTime" Name="fdtFechaPedido" />
+          <Property Type="String" Name="fvcOrdenCompra" MaxLength="20" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="DateTime" Name="fdtFechaOrdenCompra" />
+          <Property Type="String" Name="fvcDespacho" MaxLength="20" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="DateTime" Name="fdtFechaDespacho" />
+          <Property Type="Single" Name="frlPeso" Nullable="false" />
+          <Property Type="Int16" Name="fsmIdUnidadMedidaPeso" Nullable="false" />
+          <Property Type="Single" Name="frlVolumen" Nullable="false" />
+          <Property Type="Int16" Name="fsmIdUnidadMedidaVolumen" Nullable="false" />
+          <Property Type="Int32" Name="finUnidades" Nullable="false" />
+          <Property Type="Int16" Name="fsmIdUnidadMedidaEmpaque" Nullable="false" />
+          <Property Type="Single" Name="frlArea" Nullable="false" />
+          <Property Type="Int16" Name="fsmIdUnidadMedidaArea" Nullable="false" />
+          <Property Type="Decimal" Name="fmoValor" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Byte" Name="ftyEstado" Nullable="false" />
+          <Property Type="Byte" Name="ftyFacturado" />
+          <Property Type="String" Name="fvcUltimaUbicacion" MaxLength="25" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="fvcUltimaDocumento" MaxLength="25" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="Decimal" Name="fmoTarifa" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="fmoSeguro" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Int16" Name="fsmIdSucursal" Nullable="false" />
+          <Property Type="Int32" Name="finTipoNovedad" />
+          <Property Type="Boolean" Name="fbtDirecto" />
+          <Property Type="Single" Name="frlKilos" Nullable="false" />
+          <Property Type="Single" Name="frlMetros2" Nullable="false" />
+          <Property Type="Single" Name="frlMetros3" Nullable="false" />
+          <Property Type="String" Name="fvcUsuario" Nullable="true" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="fdtLastUpd" Nullable="false" />
+          <Property Type="Binary" Name="ftsTimestamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        </ComplexType>
+        <ComplexType Name="Novedad">
+     
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Descripcion" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="PuntoEntrega2">
+        
+          <Property Type="Guid" Name="fidPuntoEntrega" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+          <Property Type="String" Name="fvcDireccion" Nullable="true" />
+          <Property Type="String" Name="fvcTelefono" Nullable="true" />
+          <Property Type="String" Name="fvcCodigoEDI" Nullable="true" />
+          <Property Type="String" Name="fnuManifiesto" Nullable="true" />
+          <Property Type="Int32" Name="fsmOrden" Nullable="true" />
+          <Property Type="Double" Name="frlKilos" Nullable="true" />
+          <Property Type="Int32" Name="finUnidades" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Sucursal">
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Guid" Name="fidPuntoEntrega" Nullable="false" />
+          <Property Type="String" Name="fvcDescripcion" Nullable="false" />
+          <Property Type="String" Name="fvcDireccion" Nullable="false" />
+          <Property Type="String" Name="fvcTelefono" Nullable="false" />
+          <Property Type="String" Name="fvcIDUbicacion" Nullable="false" />
+          <Property Type="String" Name="fvcCodigoEDI" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <Alias Key="Model" Value="ModeloProduccion" />
+        <Alias Key="Target" Value="ModeloProduccion.Store" />
+        <EntityContainerMapping CdmEntityContainer="ProduccionModelo" StorageEntityContainer="ModeloProduccionStoreContainer">
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="ModeloProduccion" ZoomLevel="99" xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

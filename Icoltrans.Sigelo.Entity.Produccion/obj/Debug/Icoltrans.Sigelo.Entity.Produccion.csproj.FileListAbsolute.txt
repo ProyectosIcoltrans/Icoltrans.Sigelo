@@ -1,0 +1,16 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll.config
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb

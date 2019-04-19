@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://icolnube02:8200/ServicioVehiculos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCiudadRuta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CiudadRuta" nillable="true" type="tns:CiudadRuta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCiudadRuta" nillable="true" type="tns:ArrayOfCiudadRuta" />
+  <xs:complexType name="CiudadRuta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CiudadRuta" nillable="true" type="tns:CiudadRuta" />
+  <xs:simpleType name="TipoCaravana">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Nacional" />
+      <xs:enumeration value="Urbana" />
+      <xs:enumeration value="Regional" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TipoCaravana" nillable="true" type="tns:TipoCaravana" />
+  <xs:complexType name="ArrayOfSeguimiento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Seguimiento" nillable="true" type="tns:Seguimiento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeguimiento" nillable="true" type="tns:ArrayOfSeguimiento" />
+  <xs:complexType name="Seguimiento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaveSatelital" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Satelital" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URLSatelital" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioSatelital" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vehiculos" type="xs:int" />
+      <xs:element minOccurs="0" name="destino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fbtUrbana" type="xs:int" />
+      <xs:element minOccurs="0" name="fdtSalida" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fdtSiguientePunto" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fdtUltimoPunto" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fidCaravana" type="ser:guid" />
+      <xs:element minOccurs="0" name="finIdRuta" type="xs:int" />
+      <xs:element minOccurs="0" name="finSiguientePunto" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="finUltimoPunto" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="frlDiferencia" type="xs:double" />
+      <xs:element minOccurs="0" name="ftxObservacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ftyEstAlerta" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ftyEstReporte" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ftyMinutosAlerta" type="xs:int" />
+      <xs:element minOccurs="0" name="ftyMinutosReporte" type="xs:int" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcEstado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcSiguientePunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcUltimoPunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="origen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ruta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Seguimiento" nillable="true" type="tns:Seguimiento" />
+  <xs:complexType name="ArrayOfConductor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Conductor" nillable="true" type="tns:Conductor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConductor" nillable="true" type="tns:ArrayOfConductor" />
+  <xs:complexType name="Conductor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Banco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CuentaAhorros" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Licencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefonos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vence" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Conductor" nillable="true" type="tns:Conductor" />
+  <xs:complexType name="ArrayOfEscolta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Escolta" nillable="true" type="tns:Escolta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEscolta" nillable="true" type="tns:ArrayOfEscolta" />
+  <xs:complexType name="Escolta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Clase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Identificacion" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefonos" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Escolta" nillable="true" type="tns:Escolta" />
+  <xs:complexType name="ArrayOfReporte">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reporte" nillable="true" type="tns:Reporte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReporte" nillable="true" type="tns:ArrayOfReporte" />
+  <xs:complexType name="Reporte">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Caravanas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoraReporte" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HoraSistema" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Municipio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Peaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuntoRuta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Reporte" nillable="true" type="tns:Reporte" />
+  <xs:complexType name="ArrayOfVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vehiculo" nillable="true" type="tns:Vehiculo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehiculo" nillable="true" type="tns:ArrayOfVehiculo" />
+  <xs:complexType name="Vehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Carroceria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Chasis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="De" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ejes" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="GPS" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Manifiesto" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Marca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modelo" type="xs:short" />
+      <xs:element minOccurs="0" name="Motor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Peso" type="xs:float" />
+      <xs:element minOccurs="0" name="Placa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prioridad" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vinculacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VinculacionId" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Volumen" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vehiculo" nillable="true" type="tns:Vehiculo" />
+  <xs:complexType name="ConductoresCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Conductores" nillable="true" type="tns:ArrayOfConductor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConductoresCaravana" nillable="true" type="tns:ConductoresCaravana" />
+  <xs:complexType name="EscoltasCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Escoltas" nillable="true" type="tns:ArrayOfEscolta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EscoltasCaravana" nillable="true" type="tns:EscoltasCaravana" />
+  <xs:complexType name="ReporteCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Reportes" nillable="true" type="tns:ArrayOfReporte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReporteCaravana" nillable="true" type="tns:ReporteCaravana" />
+  <xs:complexType name="VehiculosCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaravanaId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Vehiculos" nillable="true" type="tns:ArrayOfVehiculo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehiculosCaravana" nillable="true" type="tns:VehiculosCaravana" />
+  <xs:complexType name="ArrayOfFuncionEscolta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FuncionEscolta" nillable="true" type="tns:FuncionEscolta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncionEscolta" nillable="true" type="tns:ArrayOfFuncionEscolta" />
+  <xs:complexType name="FuncionEscolta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdFuncionEscolta" type="xs:int" />
+      <xs:element minOccurs="0" name="UltimaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FuncionEscolta" nillable="true" type="tns:FuncionEscolta" />
+  <xs:complexType name="ArrayOfEscoltaCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EscoltaCaravana" nillable="true" type="tns:EscoltaCaravana" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEscoltaCaravana" nillable="true" type="tns:ArrayOfEscoltaCaravana" />
+  <xs:complexType name="EscoltaCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="finIdEscoltaCaravana" type="xs:int" />
+      <xs:element minOccurs="0" name="fnuIdentidad" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ftyIdFuncionEscolta" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EscoltaCaravana" nillable="true" type="tns:EscoltaCaravana" />
+  <xs:complexType name="ArrayOfRefuerzoCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefuerzoCaravana" nillable="true" type="tns:RefuerzoCaravana" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefuerzoCaravana" nillable="true" type="tns:ArrayOfRefuerzoCaravana" />
+  <xs:complexType name="RefuerzoCaravana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="fidRefuerzoCaravana" type="ser:guid" />
+      <xs:element minOccurs="0" name="fnuIdentidad" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ftyIdFuncionEscolta" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RefuerzoCaravana" nillable="true" type="tns:RefuerzoCaravana" />
+  <xs:complexType name="ArrayOfRefuerzo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Refuerzo" nillable="true" type="tns:Refuerzo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefuerzo" nillable="true" type="tns:ArrayOfRefuerzo" />
+  <xs:complexType name="Refuerzo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Identificacion" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ubicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UltimaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Refuerzo" nillable="true" type="tns:Refuerzo" />
+  <xs:complexType name="ReportesYEstados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estados" nillable="true" type="tns:ArrayOfEstadoVehiculo" />
+      <xs:element minOccurs="0" name="PuntosReporte" nillable="true" type="tns:ArrayOfSiguientePuntoControl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportesYEstados" nillable="true" type="tns:ReportesYEstados" />
+  <xs:complexType name="ArrayOfEstadoVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EstadoVehiculo" nillable="true" type="tns:EstadoVehiculo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEstadoVehiculo" nillable="true" type="tns:ArrayOfEstadoVehiculo" />
+  <xs:complexType name="EstadoVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Razon" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fbtProgramable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fmsIdRazonEstadoVehiculo" type="xs:int" />
+      <xs:element minOccurs="0" name="fsmIdEstadoVehiculo" type="xs:short" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EstadoVehiculo" nillable="true" type="tns:EstadoVehiculo" />
+  <xs:complexType name="ArrayOfSiguientePuntoControl">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SiguientePuntoControl" nillable="true" type="tns:SiguientePuntoControl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSiguientePuntoControl" nillable="true" type="tns:ArrayOfSiguientePuntoControl" />
+  <xs:complexType name="SiguientePuntoControl">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="fbtControl" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="finIdPuntoRuta" type="xs:int" />
+      <xs:element minOccurs="0" name="finIdRuta" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fsmIdTipoPeaje" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="fsmOrden" type="xs:short" />
+      <xs:element minOccurs="0" name="ftyMinutosPuntoAnterior" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcIDUbicacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SiguientePuntoControl" nillable="true" type="tns:SiguientePuntoControl" />
+  <xs:complexType name="ArrayOfRazonEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RazonEstado" nillable="true" type="tns:RazonEstado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRazonEstado" nillable="true" type="tns:ArrayOfRazonEstado" />
+  <xs:complexType name="RazonEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="fsmIdRazonEstadoV" type="xs:int" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RazonEstado" nillable="true" type="tns:RazonEstado" />
+  <xs:complexType name="ArrayOfCaravanaDisponible">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CaravanaDisponible" nillable="true" type="tns:CaravanaDisponible" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCaravanaDisponible" nillable="true" type="tns:ArrayOfCaravanaDisponible" />
+  <xs:complexType name="CaravanaDisponible">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Ruta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fbtUrbana" type="xs:int" />
+      <xs:element minOccurs="0" name="fidCaravana" type="ser:guid" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CaravanaDisponible" nillable="true" type="tns:CaravanaDisponible" />
+  <xs:complexType name="ArrayOfVehiculoPorSalir">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehiculoPorSalir" nillable="true" type="tns:VehiculoPorSalir" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehiculoPorSalir" nillable="true" type="tns:ArrayOfVehiculoPorSalir" />
+  <xs:complexType name="VehiculoPorSalir">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CDestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COrigen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Centro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Completa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Conductor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destinos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdentidadConductor" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Prioridad" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Property" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Trailer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fbtEnCaravana" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fdtLastUpd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fidCaravana" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="finNumeroCarnet" type="xs:int" />
+      <xs:element minOccurs="0" name="fnuManifiesto" type="xs:decimal" />
+      <xs:element minOccurs="0" name="fsmModelo" type="xs:short" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcPlaca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehiculoPorSalir" nillable="true" type="tns:VehiculoPorSalir" />
+  <xs:complexType name="ArrayOfRuta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ruta" nillable="true" type="tns:Ruta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRuta" nillable="true" type="tns:ArrayOfRuta" />
+  <xs:complexType name="Ruta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CantidadPuntos" type="xs:int" />
+      <xs:element minOccurs="0" name="CiudadDestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CiudadOrigen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Clase" type="tns:TipoCaravana" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUbicacionDestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdUbicacionOrigen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastUpdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MinutosAlerta" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="MinutosReporte" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Urbana" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Ruta" nillable="true" type="tns:Ruta" />
+  <xs:complexType name="ArrayOfVehiculoSatelital">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehiculoSatelital" nillable="true" type="tns:VehiculoSatelital" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehiculoSatelital" nillable="true" type="tns:ArrayOfVehiculoSatelital" />
+  <xs:complexType name="VehiculoSatelital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Satelital" nillable="true" type="tns:Satelital" />
+      <xs:element minOccurs="0" name="fidSatelital" type="xs:int" />
+      <xs:element minOccurs="0" name="fidVehiculosSatelital" type="xs:int" />
+      <xs:element minOccurs="0" name="fvcClave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcPlaca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehiculoSatelital" nillable="true" type="tns:VehiculoSatelital" />
+  <xs:complexType name="Satelital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fidSatelital" type="xs:int" />
+      <xs:element minOccurs="0" name="fvcDescripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fvcURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Satelital" nillable="true" type="tns:Satelital" />
+  <xs:complexType name="ArrayOfSatelital">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Satelital" nillable="true" type="tns:Satelital" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSatelital" nillable="true" type="tns:ArrayOfSatelital" />
+</xs:schema>

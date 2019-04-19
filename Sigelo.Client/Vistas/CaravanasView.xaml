@@ -1,0 +1,804 @@
+﻿<local:PageBase x:Class="Icoltrans.Sigelo.Win.Vehiculos.CaravanasView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+                xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                xmlns:igDP="http://infragistics.com/DataPresenter" xmlns:igEditors="http://infragistics.com/Editors" xmlns:local="clr-namespace:Icoltrans.Sigelo.Win.Vehiculos"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:my="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+                KeepAlive="True" d:DesignHeight="730" d:DesignWidth="1008" mc:Ignorable="d">
+    <local:PageBase.Resources>
+        <local:ConvertidorAutorizacion x:Key="convertidorAutorizacion" />
+        <local:ConvertidorColorEstado x:Key="ConvertidorColorEstado" />
+        <local:ConvertidorFondoColorEstado x:Key="ConvertidorFondoColorEstado" />
+        <local:ConvertidorUltimoReporte x:Key="ConvertidorUltimoReporte" />
+        <local:ConvertidorSiguienteReporte x:Key="ConvertidorSiguienteReporte" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <Storyboard x:Key="ActualizarStoryboard">
+            <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetName="ActualizarTextBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="90" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.50" Value="180" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.75" Value="270" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="360" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </local:PageBase.Resources>
+    <Page.DataContext>
+        <local:CaravanasViewModel />
+    </Page.DataContext>
+    <Page.CommandBindings>
+        <CommandBinding Command="Search" Executed="CommandBinding_Executed" />
+    </Page.CommandBindings>
+    <Page.InputBindings>
+        <KeyBinding Key="D1"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoRojo}"
+                    Modifiers="Control" />
+        <KeyBinding Key="D2"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoAmarillo}"
+                    Modifiers="Control" />
+        <KeyBinding Key="D3"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoVerde}"
+                    Modifiers="Control" />
+        <KeyBinding Key="R"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoRegional}"
+                    Modifiers="Control" />
+        <KeyBinding Key="N"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoNacional}"
+                    Modifiers="Control" />
+        <KeyBinding Key="U"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoUrbana}"
+                    Modifiers="Control" />
+        <KeyBinding Key="M"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.EstadoMarcada}"
+                    Modifiers="Control" />
+        <KeyBinding Key="B" Command="Search" Modifiers="Control" />
+        <KeyBinding Key="Enter"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.CambiarMarca}"
+                    Modifiers="Control" />
+        <KeyBinding Key="Enter"
+                    Command="{Binding AccionesToolBarCommand}"
+                    CommandParameter="{x:Static local:OpcionesBarra.MostrarDetalle}" />
+    </Page.InputBindings>
+    <Grid x:Name="LayoutRoot"
+          Background="{StaticResource BackgroundBrush}"
+          x:FieldModifier="private">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="152*" />
+            <ColumnDefinition Width="163*" />
+            <ColumnDefinition Width="19*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition x:Name="DetalleRow" Height="0" x:FieldModifier="private">
+                <i:Interaction.Triggers>
+                    <ei:DataTrigger Binding="{Binding Path=Visibility, ElementName=DetalleCaravanaTabControl}" Value="{x:Static Visibility.Visible}">
+                        <ei:ChangePropertyAction PropertyName="Height" Value="*" />
+                    </ei:DataTrigger>
+                    <ei:DataTrigger Binding="{Binding Path=Visibility,
+                                                      ElementName=DetalleCaravanaTabControl}"
+                                    Comparison="NotEqual"
+                                    Value="{x:Static Visibility.Visible}">
+                        <ei:ChangePropertyAction PropertyName="Height" Value="0" />
+                    </ei:DataTrigger>
+                </i:Interaction.Triggers>
+            </RowDefinition>
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <!--  Barra Superior Nivel 01  -->
+        <Rectangle Grid.ColumnSpan="2" Fill="Green" />
+        <Rectangle Grid.ColumnSpan="2" Margin="2,1,0,1">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="1" Color="#48FFFFFF" />
+                    <GradientStop />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Grid.ColumnSpan="2" Margin="2,1,0,1" Orientation="Horizontal">
+            <CheckBox x:Name="EstadoRojoCheckBox" Width="12" Height="12" Margin="10,0,0,0" VerticalAlignment="Center"
+                      Background="{StaticResource RedBrush}"
+                      IsChecked="{Binding FiltroRojo}"
+                      Padding="0"
+                      Style="{StaticResource StateCheckBox}"
+                      x:FieldModifier="private" />
+            <CheckBox x:Name="EstadoAmarilloCheckBox" Width="12" Height="12" Margin="5,0,0,0" VerticalAlignment="Center"
+                      Background="{StaticResource YellowBrush}"
+                      IsChecked="{Binding FiltroAmarillo}"
+                      Padding="0"
+                      Style="{StaticResource StateCheckBox}"
+                      x:FieldModifier="private" />
+            <CheckBox x:Name="EstadoVerdeCheckBox" Width="12" Height="12" Margin="5,0,0,0" VerticalAlignment="Center"
+                      Background="{StaticResource GreenBrush}"
+                      IsChecked="{Binding FiltroVerde}"
+                      Padding="0"
+                      Style="{StaticResource StateCheckBox}"
+                      x:FieldModifier="private" />
+            <CheckBox x:Name="NacionalCheckBox" Margin="20,0,0,0" VerticalAlignment="Center" Content="Nacional" Foreground="White"
+                      IsChecked="{Binding FiltroNacional}"
+                      x:FieldModifier="private" d:LayoutOverrides="Width" />
+            <CheckBox x:Name="RegionalCheckBox" Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Regional" Foreground="White"
+                      IsChecked="{Binding FiltroRegional}"
+                      x:FieldModifier="private" />
+            <CheckBox x:Name="UrbanaCheckBox" Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Urbana" Foreground="White"
+                      IsChecked="{Binding FiltroUrbana}"
+                      x:FieldModifier="private" />
+            <local:ControlMarcador x:Name="Marcados" Width="15" Height="15" Margin="15,0"
+                                   Marcado="{Binding Path=FiltroMarcados,
+                                                     Mode=TwoWay}"
+                                   x:FieldModifier="private" />
+            <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Foreground="White" Text="Origen" />
+            <Grid Grid.Column="2" Width="150" Margin="5,0,0,0" VerticalAlignment="Center" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="26.199" />
+                </Grid.ColumnDefinitions>
+                <my:AutoCompleteBox x:Name="OrigenesAutoCompleteBox" VerticalAlignment="Center"
+                                    BorderBrush="{x:Null}"
+                                    BorderThickness="0" FilterMode="StartsWith"
+                                    ItemsSource="{Binding Origenes}"
+                                    MinimumPrefixLength="1"
+                                    SelectedItem="{Binding Path=FiltroOrigen,
+                                                           Mode=TwoWay}"
+                                    ValueMemberPath="Descripcion" x:FieldModifier="private">
+                    <my:AutoCompleteBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock><Run FontSize="16" Text="{Binding Descripcion}" />
+                                <LineBreak /><Run FontSize="12" Foreground="Gray"
+                                     Text="{Binding Id}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </my:AutoCompleteBox.ItemTemplate>
+                    <i:Interaction.Triggers>
+                        <ei:DataTrigger Binding="{Binding Path=SelectedItem, ElementName=OrigenesAutoCompleteBox}" Value="{x:Null}">
+                            <ei:ChangePropertyAction PropertyName="Text" Value="" />
+                        </ei:DataTrigger>
+                    </i:Interaction.Triggers>
+                </my:AutoCompleteBox>
+                <Path Grid.Column="1" Width="15" Height="15" Margin="6.207,0,5,0" VerticalAlignment="Center"
+                      Data="M13.5,7 C13.5,10.313708 10.70178,13 7.25,13 C3.7982203,13 1,10.313708 1,7 C1,3.6862915 3.7982203,1 7.25,1 C10.70178,1 13.5,3.6862915 13.5,7 z M11.804679,11.685858 L16.198321,16.459142"
+                      Stretch="Fill" Stroke="#FFBABABA" StrokeThickness="2.5" />
+            </Grid>
+            <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Foreground="White" Text="Destino" />
+            <Grid Grid.Column="2" Width="150" Margin="5,0,0,0" VerticalAlignment="Center" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="26.199" />
+                </Grid.ColumnDefinitions>
+                <my:AutoCompleteBox x:Name="DestinosAutoCompleteBox" VerticalAlignment="Center"
+                                    BorderBrush="{x:Null}"
+                                    BorderThickness="0" FilterMode="StartsWith"
+                                    ItemsSource="{Binding Destinos}"
+                                    MinimumPrefixLength="1"
+                                    SelectedItem="{Binding Path=FiltroDestino,
+                                                           Mode=TwoWay}"
+                                    ValueMemberPath="Descripcion" x:FieldModifier="private">
+                    <my:AutoCompleteBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock><Run FontSize="16" Text="{Binding Descripcion}" />
+                                <LineBreak /><Run FontSize="12" Foreground="Gray"
+                                     Text="{Binding Id}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </my:AutoCompleteBox.ItemTemplate>
+                    <i:Interaction.Triggers>
+                        <ei:DataTrigger Binding="{Binding Path=SelectedItem, ElementName=DestinosAutoCompleteBox}" Value="{x:Null}">
+                            <ei:ChangePropertyAction PropertyName="Text" Value="" />
+                        </ei:DataTrigger>
+                    </i:Interaction.Triggers>
+                </my:AutoCompleteBox>
+                <Path Grid.Column="1" Width="15" Height="15" Margin="6.207,0,5,0" VerticalAlignment="Center"
+                      Data="M13.5,7 C13.5,10.313708 10.70178,13 7.25,13 C3.7982203,13 1,10.313708 1,7 C1,3.6862915 3.7982203,1 7.25,1 C10.70178,1 13.5,3.6862915 13.5,7 z M11.804679,11.685858 L16.198321,16.459142"
+                      Stretch="Fill" Stroke="#FFBABABA" StrokeThickness="2.5" />
+            </Grid>
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White">
+                <Run>Buscar en</Run>
+                <LineBreak />
+                <Run>descripción</Run>
+            </TextBlock>
+            <Grid Width="170" Margin="5,0,0,0" VerticalAlignment="Center" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="26.199" />
+                </Grid.ColumnDefinitions>
+                <my:AutoCompleteBox x:Name="CaravanasAutoCompleteBox" VerticalAlignment="Center"
+                                    BorderBrush="{x:Null}"
+                                    BorderThickness="0" FilterMode="Contains"
+                                    ItemsSource="{Binding Seguimientos}"
+                                    MinimumPrefixLength="1"
+                                    SelectedItem="{Binding DescripcionBuscada,
+                                                           Mode=TwoWay}"
+                                    ToolTip="Busqueda en la Descripción de la Caravana" ValueMemberPath="Model.Caravana.fvcDescripcion" x:FieldModifier="private">
+                    <my:AutoCompleteBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock TextTrimming="WordEllipsis">
+                                <Run FontSize="16" Text="{Binding Model.Caravana.fvcDescripcion}" />
+                                <LineBreak />
+                                <Run FontSize="12" Foreground="Gray"
+                                     Text="{Binding Model.Caravana.OrigenDestino,
+                                                    Mode=OneWay}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </my:AutoCompleteBox.ItemTemplate>
+                    <i:Interaction.Triggers>
+                        <ei:DataTrigger Binding="{Binding Path=SelectedItem, ElementName=CaravanasAutoCompleteBox}" Value="{x:Null}">
+                            <ei:ChangePropertyAction PropertyName="Text" Value="" />
+                        </ei:DataTrigger>
+                    </i:Interaction.Triggers>
+                </my:AutoCompleteBox>
+                <Path Grid.Column="1" Width="15" Height="15" Margin="6.207,0,5,0" VerticalAlignment="Center"
+                      Data="M13.5,7 C13.5,10.313708 10.70178,13 7.25,13 C3.7982203,13 1,10.313708 1,7 C1,3.6862915 3.7982203,1 7.25,1 C10.70178,1 13.5,3.6862915 13.5,7 z M11.804679,11.685858 L16.198321,16.459142"
+                      Stretch="Fill" Stroke="#FFBABABA" StrokeThickness="2.5" />
+            </Grid>
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" Cursor="Hand" Foreground="White" Text="Limpiar" TextDecorations="Underline" ToolTip="Limpiar Filtro">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonDown">
+                        <i:InvokeCommandAction Command="{Binding Path=ClearFilterCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBlock>
+        </StackPanel>
+
+        <!--  Barra Superior Nivel 02  -->
+        <Rectangle Grid.Row="1" Grid.ColumnSpan="2" Fill="Green" />
+        <Rectangle Grid.Row="1" Grid.ColumnSpan="2" Margin="2,1,0,1">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="1" Color="#48FFFFFF" />
+                    <GradientStop />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="2,1,0,1" Orientation="Horizontal">
+            <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="ExtraBold" Foreground="White" Text="MAPA:" />
+            <CheckBox x:Name="AlarmaCheckBox" Margin="10,0,0,0" VerticalAlignment="Center" Content="Alarmas" Foreground="White" x:FieldModifier="private" d:LayoutOverrides="Width" />
+            <TextBlock Margin="20,0,0,0" VerticalAlignment="Center" Foreground="White" Text="Placa" />
+            <Grid Width="100" Margin="5,0,0,0" VerticalAlignment="Center" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="26.199" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="PlacaTextBox" Height="20"
+                         BorderBrush="{x:Null}"
+                         BorderThickness="0" 
+                         Text="{Binding Path=PlacaMapa,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}"
+                         ToolTip="Busqueda en el Mapa" x:FieldModifier="private" KeyDown="PlacaTextBox_KeyDown_1">
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Enter" Command="{Binding SearchTextboxEnterKeyCommand}"/>
+                    </TextBox.InputBindings>
+                </TextBox>
+
+                <Path Grid.Column="1" Width="15" Height="15" Margin="0,2.5,4.793,2.5" VerticalAlignment="Center" 
+                      Data="M13.5,7 C13.5,10.313708 10.70178,13 7.25,13 C3.7982203,13 1,10.313708 1,7 C1,3.6862915 3.7982203,1 7.25,1 C10.70178,1 13.5,3.6862915 13.5,7 z M11.804679,11.685858 L16.198321,16.459142"
+                      Stretch="Fill" Stroke="#FFBABABA" StrokeThickness="2.5" HorizontalAlignment="Right"  />
+            </Grid>
+        </StackPanel>
+        <!--<TextBlock Grid.Row="1" Grid.Column="1" Margin="0,6,3,6" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Webdings" FontSize="18" Foreground="White" Text="i">
+            <TextBlock.ToolTip>
+                <ToolTip>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Grid.Row="0" Margin="0,2,0,3" FontSize="14" FontWeight="Bold"
+                                   Text="{Binding UsuarioActual.NomEmpleado}" />
+                        <TextBlock Grid.Row="1" Text="{Binding UsuarioActual.DesCompania}" />
+                        <TextBlock Grid.Row="2" Text="{Binding UsuarioActual.DesSucursal}" />
+                        <TextBlock Grid.Row="3" Text="{Binding UsuarioActual.DesCentro}" />
+                        <TextBlock Grid.Row="5" Text="{Binding UsuarioActual.DesCargo}" />
+                    </StackPanel>
+                </ToolTip>
+            </TextBlock.ToolTip>
+        </TextBlock>-->
+
+        <Image Name="ImageViewer1" Grid.Column="1" Margin="0,0,1,1" HorizontalAlignment="Right" Width="80" Grid.RowSpan="2"  Stretch="Fill" Grid.ColumnSpan="2">
+            <Image.Source>
+                <BitmapImage UriSource="../Resources/drawable-ldpi-icon.png"/>
+            </Image.Source>
+            <Image.ToolTip>
+                <ToolTip>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Grid.Row="0" Margin="0,2,0,3" FontSize="14" FontWeight="Bold"
+                                   Text="{Binding UsuarioActual.NomEmpleado}" />
+                        <TextBlock Grid.Row="1" Text="{Binding UsuarioActual.DesCompania}" />
+                        <TextBlock Grid.Row="2" Text="{Binding UsuarioActual.DesSucursal}" />
+                        <TextBlock Grid.Row="3" Text="{Binding UsuarioActual.DesCentro}" />
+                        <TextBlock Grid.Row="5" Text="{Binding UsuarioActual.DesCargo}" />
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <!--  Lista  -->
+        <Grid Grid.Row="2" Grid.ColumnSpan="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <igDP:XamDataGrid Grid.Row="0" ScrollViewer.ScrollChanged="cbdg1_ScrollChanged" 
+                              ActiveDataItem="{Binding Path=CaravanaSeleccionada,
+                                                       Mode=TwoWay}"
+                              BorderThickness="0"
+                              DataSource="{Binding Seguimientos}"
+                              ScrollingMode="Immediate" Theme="IGTheme" Name="gridCaravanas" RecordUpdated="gridCaravanas_RecordUpdated" ForceCursor="True" IsUndoEnabled="True" >
+                <igDP:XamDataGrid.Resources>
+                    <Style TargetType="{x:Type igDP:DataRecordCellArea}">
+                        <Setter Property="BackgroundHover" Value="Transparent" />
+                        <Setter Property="BorderHoverBrush" Value="Transparent" />
+                        <Setter Property="Background" Value="{Binding Path=DataItem.Model.Caravana, Converter={StaticResource ConvertidorFondoColorEstado}}" />
+                    </Style>
+
+                    <Style TargetType="{x:Type igDP:HeaderPresenter}" >
+
+                        <Setter Property="Background"  Value="Green" />
+
+                    </Style>
+                </igDP:XamDataGrid.Resources>
+                <igDP:XamDataGrid.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#FF138913"/>
+                    </LinearGradientBrush>
+                </igDP:XamDataGrid.OpacityMask>
+                <igDP:XamDataGrid.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="Green"/>
+                    </LinearGradientBrush>
+                </igDP:XamDataGrid.Foreground>
+                <igDP:XamDataGrid.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="Green"/>
+                        <GradientStop Color="Green"/>
+                    </LinearGradientBrush>
+                </igDP:XamDataGrid.BorderBrush>
+                <igDP:XamDataGrid.FieldLayouts>
+                    <igDP:FieldLayout>
+                        <igDP:FieldLayout.Fields>
+
+
+                            <igDP:UnboundField Width="10" Column="0" Label="" RowSpan="3">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings AllowRecordFiltering="True">
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <Rectangle Margin="0,2,2,2" Fill="{Binding Path=DataItem.Model.Caravana, Converter={StaticResource ConvertidorColorEstado}}" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                            <igDP:UnboundField Width="17" Column="1" Label="" RowSpan="3">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings AllowRecordFiltering="False">
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <local:ControlMarcador Width="15" Height="15" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                                                                   Marcado="{Binding Path=DataItem.Marcado,
+                                                                                                     Mode=TwoWay}" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+
+
+                            <igDP:UnboundField Width="*" BindingMode="OneWay" BindingPath="Model.Caravana.fvcDescripcion" Column="2" Label="Caravana" Row="0" >
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings>
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <TextBlock FontSize="16" FontWeight="Bold"
+                                                                       Text="{Binding Path=DataItem.Model.Caravana.fvcDescripcion  }"
+                                                                       TextWrapping="Wrap"
+                                                                       Cursor="Hand">
+                                                            </TextBlock>
+
+                                                        </ControlTemplate>
+
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+
+                            <igDP:UnboundField Width="*" BindingMode="OneWay" BindingPath="Model.Caravana.Satelital" Column="2" Label="Caravana" Row="3">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings>
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <TextBlock Cursor="Hand" >
+                                                                <Hyperlink NavigateUri="{Binding Path=DataItem.Model.Caravana.URLSatelital}" RequestNavigate="Hyperlink_RequestNavigate">
+                                                                    <TextBlock Cursor="Hand" Text="{Binding Path=DataItem.Model.Caravana.Satelital}" ></TextBlock>
+                                                                </Hyperlink>
+                                                            </TextBlock>
+
+                                                        </ControlTemplate>
+
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+
+
+                            <igDP:UnboundField Width="*" BindingMode="OneWay" BindingPath="Model.Caravana.fvcEstado" Column="2" Label="Estado" Row="1">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings>
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <TextBlock FontSize="14"
+                                                                       Text="{Binding Path=DataItem.Model.Caravana.fvcEstado}"
+                                                                       TextWrapping="Wrap" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                            <igDP:UnboundField Width="*" BindingMode="OneWay" BindingPath="Model.Caravana.OrigenDestino" Column="2" Label="Origen / Destino" Row="2">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings>
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <TextBlock FontSize="10"
+                                                                       Text="{Binding Path=DataItem.Model.Caravana.OrigenDestino}"
+                                                                       TextWrapping="Wrap" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                            <igDP:UnboundField Width="140" Column="3" Label="Último reporte" RowSpan="4">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings AllowRecordFiltering="False">
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <ContentControl x:Name="ActualContent" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                                            Content="{Binding DataItem.Model.Caravana,
+                                                                                              Converter={StaticResource ConvertidorUltimoReporte}}">
+                                                                <i:Interaction.Triggers>
+                                                                    <i:EventTrigger EventName="MouseLeftButtonDown" SourceName="ActualContent">
+                                                                        <i:InvokeCommandAction Command="{Binding Path=DataItem.ReportarActualCommand}" />
+                                                                    </i:EventTrigger>
+                                                                </i:Interaction.Triggers>
+                                                            </ContentControl>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                            <igDP:UnboundField Width="140" Column="4" Label="Siguiente reporte" RowSpan="4">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings AllowRecordFiltering="False">
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <ContentControl x:Name="SiguienteContent" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                                            Content="{Binding DataItem.Model.Caravana,
+                                                                                              Converter={StaticResource ConvertidorSiguienteReporte}}">
+                                                                <i:Interaction.Triggers>
+                                                                    <i:EventTrigger EventName="MouseLeftButtonDown" SourceName="SiguienteContent">
+                                                                        <i:InvokeCommandAction Command="{Binding Path=DataItem.ReportarSiguienteCommand}" />
+                                                                    </i:EventTrigger>
+                                                                </i:Interaction.Triggers>
+                                                            </ContentControl>
+
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                            <igDP:UnboundField Width="40" BindingMode="OneWay" Column="5" Label="" RowSpan="4">
+                                <igDP:UnboundField.Settings>
+                                    <igDP:FieldSettings AllowRecordFiltering="False">
+                                        <igDP:FieldSettings.CellValuePresenterStyle>
+                                            <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                            <ContentControl x:Name="ActualizarMapaContent" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                                            Cursor="Hand" ToolTip="clic aquí para ver en el mapa.">
+                                                                <!--<TextBlock x:Name="ActualizarMapaTextBlock" HorizontalAlignment="Center" Cursor="Hand" FontFamily="Webdings" FontSize="50" FontWeight="Bold" Foreground="Black"
+                                                                Text="$"></TextBlock>-->
+                                                                <Image Uid="imgLupa" Height="40" Width="40">
+                                                                    <Image.Source>
+                                                                        <BitmapImage UriSource="../Resources/search-icon-png-20.png"/>
+                                                                    </Image.Source>
+                                                                </Image>
+                                                                <i:Interaction.Triggers>
+                                                                    <i:EventTrigger EventName="MouseLeftButtonDown"  SourceName="ActualizarMapaContent">
+                                                                        <i:InvokeCommandAction Command="{Binding Path=DataItem.ReportarEnMapaCommand}" />
+                                                                    </i:EventTrigger>
+                                                                </i:Interaction.Triggers>
+                                                            </ContentControl>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </igDP:FieldSettings.CellValuePresenterStyle>
+                                    </igDP:FieldSettings>
+                                </igDP:UnboundField.Settings>
+                            </igDP:UnboundField>
+                        </igDP:FieldLayout.Fields>
+
+                    </igDP:FieldLayout>
+                </igDP:XamDataGrid.FieldLayouts>
+                <igDP:XamDataGrid.FieldSettings>
+                    <igDP:FieldSettings AllowRecordFiltering="True" AllowEdit="False" CellClickAction="SelectRecord" FilterLabelIconDropDownType="MultiSelectExcelStyle" LabelClickAction="Nothing"
+                                        LabelTextAlignment="Center" AllowGroupBy="True" />
+                </igDP:XamDataGrid.FieldSettings>
+                <igDP:XamDataGrid.FieldLayoutSettings>
+                    <igDP:FieldLayoutSettings AllowAddNew="False" AllowClipboardOperations="Copy" AllowDelete="False" AllowFieldMoving="No" AutoArrangeCells="Never" AutoGenerateFields="False" FilterUIType="LabelIcons"
+                                              RecordSelectorLocation="None" SelectionTypeCell="Default" SelectionTypeField="None" SelectionTypeRecord="Single" RecordFilterScope="AllRecords" />
+                </igDP:XamDataGrid.FieldLayoutSettings>
+
+
+                <igDP:XamDataGrid.InputBindings>
+                    <MouseBinding Command="{Binding Path=AccionesToolBarCommand,
+                                                    Mode=OneWay}"
+                                  CommandParameter="{x:Static local:OpcionesBarra.MostrarDetalle}"
+                                  MouseAction="LeftDoubleClick" />
+                </igDP:XamDataGrid.InputBindings>
+            </igDP:XamDataGrid>
+
+            <Rectangle Grid.Row="1" Fill="#FFABABAB" />
+            <TextBlock Grid.Row="1" Margin="0,0,15,0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White">
+                <Run Text="Caravanas: " />
+                <Run FontWeight="Bold" Text="{Binding CaravanasFiltradas, Mode=OneWay}" />
+                <Run Text=" " />
+                <Run FontWeight="Bold" Text="/" />
+                <Run Text=" " />
+                <Run FontWeight="Bold" Text="{Binding TotalCaravanas, Mode=OneWay}" />
+                <Run Text=" - Vehiculos: " />
+                <Run FontWeight="Bold" Text="{Binding TotalVehiculos, Mode=OneWay}" />
+            </TextBlock>
+        </Grid>
+        <!--  Contenido  -->
+        <local:ControlMapa x:Name="MapWebBrowser" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                           MostarAlarmas="{Binding ElementName=AlarmaCheckBox,
+                                                   Path=IsChecked}"
+                           Placa="{Binding ElementName=PlacaTextBox,
+                                           Path=Text}"
+                           Visibility="{Binding Path=MostrarMapa,
+                                                Converter={StaticResource BooleanToVisibilityConverter}}"
+                           x:FieldModifier="private" />
+        <TabControl x:Name="DetalleCaravanaTabControl" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,5,0,55"
+                    Visibility="{Binding Path=MostrarDetalle,
+                                         Converter={StaticResource BooleanToVisibilityConverter}}"
+                    x:FieldModifier="private" Grid.RowSpan="2">
+            <TabItem x:Name="PuntosReporteTabItem" Header="Puntos de reporte" x:FieldModifier="private">
+                <local:ControlListaPuntosReporte />
+            </TabItem>
+            <TabItem x:Name="PuntosEntregaTabItem" Header="Puntos de entrega" x:FieldModifier="private">
+                <local:ControlListaPuntosEntrega />
+            </TabItem>
+            <TabItem x:Name="EscoltasTabItem" Header="Escoltas" x:FieldModifier="private">
+                <local:ControlListaEscoltas />
+            </TabItem>
+            <TabItem x:Name="ConductoresTabItem" Header="Conductores" x:FieldModifier="private">
+                <local:ControlListaConductores />
+            </TabItem>
+            <TabItem x:Name="VehiculosTabItem" Header="Vehiculos" x:FieldModifier="private">
+                <local:ControlListaVehiculos />
+            </TabItem>
+            <TabItem x:Name="CargaTabItem" Header="Carga" x:FieldModifier="private">
+                <local:ControlListaCarga />
+            </TabItem>
+        </TabControl>
+
+        <!--  Barra Inferior  -->
+        <Rectangle Grid.Row="4" Grid.ColumnSpan="4" Fill="Green" />
+        <Rectangle Grid.Row="4" Grid.ColumnSpan="4" Margin="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#48FFFFFF" />
+                    <GradientStop Offset="1" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="3" Orientation="Horizontal">
+            <Button x:Name="CrearCaravanaButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.CrearCaravana}"
+                    Content="Crear caravana" Foreground="White"
+                    IsEnabled="{Binding ConverterParameter=28677578-780D-4104-AC87-C2D25F70B3BE,
+                                        Converter={StaticResource convertidorAutorizacion},
+                                        Mode=OneWay}"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="InicioRecorridoButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.InicioRecorrido}"
+                    Content="Inicio de recorrido" Foreground="White"
+                    IsEnabled="{Binding ConverterParameter=62DF7957-E0FF-4412-99E9-ABF92635F6A8,
+                                        Converter={StaticResource convertidorAutorizacion},
+                                        Mode=OneWay}"
+                    Style="{StaticResource MenuButton}" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="EscoltasButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.Escoltas}"
+                    Content="Cambio de escoltas" Foreground="White"
+                    IsEnabled="{Binding ConverterParameter=E0DAA341-CF2C-4DDB-AD6C-A1CF17366782,
+                                        Converter={StaticResource convertidorAutorizacion},
+                                        Mode=OneWay}"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="RefuerzosButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.Refuerzos}"
+                    Content="Cambio de refuerzos" Foreground="White"
+                    IsEnabled="{Binding ConverterParameter=93D5F49B-09BE-43A7-8DC9-FE31098E2052,
+                                        Converter={StaticResource convertidorAutorizacion},
+                                        Mode=OneWay}"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="CambiarCaravanaButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.CambiarCaravana}"
+                    Content="Cambio de caravana" Foreground="White"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="FinRecorridoButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.FinRecorrido}"
+                    Content="Fin del recorrido" Foreground="White"
+                    IsEnabled="{Binding ConverterParameter=704C2CFB-5460-4CBE-AD33-A08BABE84F58,
+                                        Converter={StaticResource convertidorAutorizacion},
+                                        Mode=OneWay}"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+            <Path Width="0.64" Height="40" Margin="2,0" VerticalAlignment="Center" Data="F1 M 86.7537,131.483L 86.7537,137.337" Stretch="Fill" StrokeLineJoin="Round" StrokeThickness="0.640055">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0.465295,0.0505441" EndPoint="0.465295,0.943124">
+                        <GradientStop Offset="0" Color="#00FFFFFF" />
+                        <GradientStop Offset="0.493023" Color="#FFD4D4D4" />
+                        <GradientStop Offset="1" Color="#00FFFFFF" />
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+            <Button x:Name="AsignarSatelitalButton" Width="120"
+                    Command="{Binding Path=NavgationCommand}"
+                    CommandParameter="{x:Static local:OpcionesNavegacion.AsignarSatelital}"
+                    Content="Asignar Satelital" Foreground="White"
+                    Style="{StaticResource MenuButton}"
+                    x:FieldModifier="private" />
+        </StackPanel>
+        <StackPanel x:Name="ActualizarStackPanel" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,5,8" HorizontalAlignment="Right" VerticalAlignment="Bottom" x:FieldModifier="private" Height="46" Width="31">
+            <TextBlock x:Name="ActualizarTextBlock" HorizontalAlignment="Center" Cursor="Hand" FontFamily="Webdings" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.5,0.5"
+                       Text="q" ToolTip="clic aquí para actualizar manualmente." x:FieldModifier="private">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="UltimaActualizacionTextBlock" Foreground="White"
+                       Text="{Binding Path=ActualizarStoryboard}"
+                       x:FieldModifier="private" />
+            <i:Interaction.Triggers>
+                <ei:DataTrigger Binding="{Binding Path=ActualizarStoryboard, Mode=OneWay}" Value="Actualizando">
+                    <ei:ControlStoryboardAction ControlStoryboardOption="Play" Storyboard="{StaticResource ActualizarStoryboard}" />
+                    <ei:ChangePropertyAction PropertyName="Cursor" TargetName="ActualizarTextBlock"
+                                             Value="{x:Static Cursors.Wait}" />
+                </ei:DataTrigger>
+                <ei:DataTrigger Binding="{Binding Path=ActualizarStoryboard,
+                                                  Mode=OneWay}"
+                                Comparison="NotEqual" Value="Actualizando">
+                    <ei:ControlStoryboardAction ControlStoryboardOption="Stop" Storyboard="{StaticResource ActualizarStoryboard}" />
+                    <ei:ChangePropertyAction PropertyName="Cursor" TargetName="ActualizarTextBlock"
+                                             Value="{x:Static Cursors.Hand}" />
+                </ei:DataTrigger>
+                <i:EventTrigger EventName="MouseLeftButtonDown" SourceName="ActualizarStackPanel">
+                    <i:InvokeCommandAction Command="{Binding Path=RefrescarListaCommand, Mode=OneWay}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </StackPanel>
+        <!--  Splitters  -->
+        <GridSplitter Grid.Row="3" Grid.Column="1" Height="5" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                      Background="{StaticResource BackgroundBrush}"
+                      BorderBrush="Silver" BorderThickness="1" Cursor="SizeNS" ResizeDirection="Rows" Grid.RowSpan="2" />
+        <GridSplitter Grid.Row="2" Grid.Column="0" Width="5" Margin="0"
+                      Background="{StaticResource BackgroundBrush}"
+                      BorderBrush="Silver" BorderThickness="1" Cursor="SizeWE" ResizeDirection="Columns" />
+    </Grid>
+</local:PageBase>

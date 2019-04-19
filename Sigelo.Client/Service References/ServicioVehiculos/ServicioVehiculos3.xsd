@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://icolnube02:8200/ServicioVehiculos.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ServerErrorWrapper">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aplicativo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IPMaquina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InnerServerError" nillable="true" type="tns:ServerErrorWrapper" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MensajesSql" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Solucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StackTrace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Target" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServerErrorWrapper" nillable="true" type="tns:ServerErrorWrapper" />
+</xs:schema>

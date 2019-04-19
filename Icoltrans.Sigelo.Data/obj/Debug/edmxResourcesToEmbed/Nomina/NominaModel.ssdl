@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NominaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="NominaModelStoreContainer" />
+  <Function Name="stpQryEmpleadosGrupoCargo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tyIdGrupoCargo" Type="tinyint" Mode="In" />
+    <Parameter Name="smIDSucursal" Type="smallint" Mode="In" />
+  </Function>
+</Schema>

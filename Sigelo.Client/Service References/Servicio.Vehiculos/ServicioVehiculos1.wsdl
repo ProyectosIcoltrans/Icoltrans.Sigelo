@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioVehiculos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IServicioVehiculos_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Web.Host" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Maestros" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Seguridad" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Nomina" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioVehiculos_ObtenerParametrosIniciales_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametrosIniciales" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerParametrosIniciales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerParametrosInicialesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerParametrosIniciales_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q1:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSeguimientos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSeguimientos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSeguimientos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSeguimientosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSeguimientos_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q2:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerDetalleCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetalleCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerDetalleCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetalleCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerDetalleCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q3:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerConductoresCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerConductoresCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerConductoresCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerConductoresCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerConductoresCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q4:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltasCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltasCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q5:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerReportesCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerReportesCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q6:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculosCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculosCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q7:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPuntosEntregaCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPuntosEntregaCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q8:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPuntosEntregaControl" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPuntosEntregaControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerPuntosEntregaControl_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q9:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerFuncionesEscolta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFuncionesEscolta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerFuncionesEscolta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFuncionesEscoltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerFuncionesEscolta_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q10:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarEscolta_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarEscolta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarEscolta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarEscoltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarEscolta_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q11:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarEscolta_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarEscolta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarEscolta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarEscoltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarEscolta_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q12:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasPorCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltasPorCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasPorCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltasPorCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltasPorCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q13:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosPorCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRefuerzosPorCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosPorCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRefuerzosPorCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosPorCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q14:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosDisponibles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRefuerzosDisponibles" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosDisponibles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRefuerzosDisponiblesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRefuerzosDisponibles_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q15:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarRefuerzoCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarRefuerzoCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarRefuerzoCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarRefuerzoCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AgregarRefuerzoCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q16:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarRefuerzoCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarRefuerzoCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarRefuerzoCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarRefuerzoCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_RetirarRefuerzoCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q17:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEscoltasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerEscoltas_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q18:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarNombreCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarNombreCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarNombreCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarNombreCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarNombreCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q19:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesYEstados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerReportesYEstados" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesYEstados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerReportesYEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerReportesYEstados_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q20:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GrabarReporteCarretera_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrabarReporteCarretera" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GrabarReporteCarretera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrabarReporteCarreteraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GrabarReporteCarretera_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q21:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRazonesEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRazonesEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRazonesEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRazonesEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRazonesEstado_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q22:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasDisponibles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanasDisponibles" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasDisponibles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanasDisponiblesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasDisponibles_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q23:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasCarretera_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanasCarretera" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasCarretera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanasCarreteraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanasCarretera_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q24:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_IniciarRecorrido_InputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarRecorrido" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_IniciarRecorrido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IniciarRecorridoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_IniciarRecorrido_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q25:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_FinalizarRecorrido_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalizarRecorrido" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_FinalizarRecorrido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalizarRecorridoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_FinalizarRecorrido_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q26:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_VehiculosPorSalir_InputMessage">
+    <wsdl:part name="parameters" element="tns:VehiculosPorSalir" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_VehiculosPorSalir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VehiculosPorSalirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_VehiculosPorSalir_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q27:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_InsertarVehiculoCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarVehiculoCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_InsertarVehiculoCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarVehiculoCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_InsertarVehiculoCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q28:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarVehiculoCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVehiculoCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarVehiculoCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarVehiculoCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarVehiculoCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q29:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q30:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_EliminarCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q31:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerListaRutas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaRutas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerListaRutas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaRutasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerListaRutas_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q32:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanaPlaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanaPlaca" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanaPlaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCaravanaPlacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerCaravanaPlaca_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q33:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRutasTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRutasTipo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRutasTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerRutasTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerRutasTipo_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q34:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosParaCambio_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculosParaCambio" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosParaCambio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculosParaCambioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculosParaCambio_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q35="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q35:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarRutaCaravana_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarRutaCaravana" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarRutaCaravana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarRutaCaravanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarRutaCaravana_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q36:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_UnirCaravanas_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnirCaravanas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_UnirCaravanas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnirCaravanasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_UnirCaravanas_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q37="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q37:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarCarnet_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarCarnet" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarCarnet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarCarnetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CambiarCarnet_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q38:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalesAsignados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitalesAsignados" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalesAsignados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitalesAsignadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalesAsignados_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q39:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitales_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitales" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitales_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q40:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearSatelital_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSatelital" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearSatelital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearSatelitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_CrearSatelital_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q41="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q41:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AsignarSatelitalAVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarSatelitalAVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AsignarSatelitalAVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarSatelitalAVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_AsignarSatelitalAVehiculo_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q42:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculoSatelitalPorPlaca" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVehiculoSatelitalPorPlacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q43="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q43:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitalPorId" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSatelitalPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_ObtenerSatelitalPorId_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q44:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GenerarError_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarError" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GenerarError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioVehiculos_GenerarError_ServerErrorWrapperFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Comunes" name="detail" element="q45:ServerErrorWrapper" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioVehiculos">
+    <wsdl:operation name="ObtenerParametrosIniciales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerParametrosIniciales" message="tns:IServicioVehiculos_ObtenerParametrosIniciales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerParametrosInicialesResponse" message="tns:IServicioVehiculos_ObtenerParametrosIniciales_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerParametrosInicialesServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerParametrosIniciales_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSeguimientos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSeguimientos" message="tns:IServicioVehiculos_ObtenerSeguimientos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSeguimientosResponse" message="tns:IServicioVehiculos_ObtenerSeguimientos_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSeguimientosServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerSeguimientos_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetalleCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerDetalleCaravana" message="tns:IServicioVehiculos_ObtenerDetalleCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerDetalleCaravanaResponse" message="tns:IServicioVehiculos_ObtenerDetalleCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerDetalleCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerDetalleCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerConductoresCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerConductoresCaravana" message="tns:IServicioVehiculos_ObtenerConductoresCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerConductoresCaravanaResponse" message="tns:IServicioVehiculos_ObtenerConductoresCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerConductoresCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerConductoresCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltasCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasCaravana" message="tns:IServicioVehiculos_ObtenerEscoltasCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasCaravanaResponse" message="tns:IServicioVehiculos_ObtenerEscoltasCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerEscoltasCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerReportesCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesCaravana" message="tns:IServicioVehiculos_ObtenerReportesCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesCaravanaResponse" message="tns:IServicioVehiculos_ObtenerReportesCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerReportesCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculosCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosCaravana" message="tns:IServicioVehiculos_ObtenerVehiculosCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosCaravanaResponse" message="tns:IServicioVehiculos_ObtenerVehiculosCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerVehiculosCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPuntosEntregaCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaCaravana" message="tns:IServicioVehiculos_ObtenerPuntosEntregaCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaCaravanaResponse" message="tns:IServicioVehiculos_ObtenerPuntosEntregaCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerPuntosEntregaCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPuntosEntregaControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaControl" message="tns:IServicioVehiculos_ObtenerPuntosEntregaControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaControlResponse" message="tns:IServicioVehiculos_ObtenerPuntosEntregaControl_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaControlServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerPuntosEntregaControl_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFuncionesEscolta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerFuncionesEscolta" message="tns:IServicioVehiculos_ObtenerFuncionesEscolta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerFuncionesEscoltaResponse" message="tns:IServicioVehiculos_ObtenerFuncionesEscolta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerFuncionesEscoltaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerFuncionesEscolta_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarEscolta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarEscolta" message="tns:IServicioVehiculos_AgregarEscolta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarEscoltaResponse" message="tns:IServicioVehiculos_AgregarEscolta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarEscoltaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_AgregarEscolta_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetirarEscolta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarEscolta" message="tns:IServicioVehiculos_RetirarEscolta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarEscoltaResponse" message="tns:IServicioVehiculos_RetirarEscolta_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarEscoltaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_RetirarEscolta_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltasPorCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasPorCaravana" message="tns:IServicioVehiculos_ObtenerEscoltasPorCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasPorCaravanaResponse" message="tns:IServicioVehiculos_ObtenerEscoltasPorCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasPorCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerEscoltasPorCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRefuerzosPorCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosPorCaravana" message="tns:IServicioVehiculos_ObtenerRefuerzosPorCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosPorCaravanaResponse" message="tns:IServicioVehiculos_ObtenerRefuerzosPorCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosPorCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerRefuerzosPorCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRefuerzosDisponibles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosDisponibles" message="tns:IServicioVehiculos_ObtenerRefuerzosDisponibles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosDisponiblesResponse" message="tns:IServicioVehiculos_ObtenerRefuerzosDisponibles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosDisponiblesServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerRefuerzosDisponibles_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRefuerzoCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarRefuerzoCaravana" message="tns:IServicioVehiculos_AgregarRefuerzoCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarRefuerzoCaravanaResponse" message="tns:IServicioVehiculos_AgregarRefuerzoCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/AgregarRefuerzoCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_AgregarRefuerzoCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetirarRefuerzoCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarRefuerzoCaravana" message="tns:IServicioVehiculos_RetirarRefuerzoCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarRefuerzoCaravanaResponse" message="tns:IServicioVehiculos_RetirarRefuerzoCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/RetirarRefuerzoCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_RetirarRefuerzoCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltas" message="tns:IServicioVehiculos_ObtenerEscoltas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasResponse" message="tns:IServicioVehiculos_ObtenerEscoltas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerEscoltas_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarNombreCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarNombreCaravana" message="tns:IServicioVehiculos_CambiarNombreCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarNombreCaravanaResponse" message="tns:IServicioVehiculos_CambiarNombreCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarNombreCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_CambiarNombreCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerReportesYEstados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesYEstados" message="tns:IServicioVehiculos_ObtenerReportesYEstados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesYEstadosResponse" message="tns:IServicioVehiculos_ObtenerReportesYEstados_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerReportesYEstadosServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerReportesYEstados_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrabarReporteCarretera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/GrabarReporteCarretera" message="tns:IServicioVehiculos_GrabarReporteCarretera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/GrabarReporteCarreteraResponse" message="tns:IServicioVehiculos_GrabarReporteCarretera_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/GrabarReporteCarreteraServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_GrabarReporteCarretera_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRazonesEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRazonesEstado" message="tns:IServicioVehiculos_ObtenerRazonesEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRazonesEstadoResponse" message="tns:IServicioVehiculos_ObtenerRazonesEstado_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRazonesEstadoServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerRazonesEstado_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanasDisponibles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasDisponibles" message="tns:IServicioVehiculos_ObtenerCaravanasDisponibles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasDisponiblesResponse" message="tns:IServicioVehiculos_ObtenerCaravanasDisponibles_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasDisponiblesServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerCaravanasDisponibles_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanasCarretera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasCarretera" message="tns:IServicioVehiculos_ObtenerCaravanasCarretera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasCarreteraResponse" message="tns:IServicioVehiculos_ObtenerCaravanasCarretera_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasCarreteraServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerCaravanasCarretera_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IniciarRecorrido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/IniciarRecorrido" message="tns:IServicioVehiculos_IniciarRecorrido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/IniciarRecorridoResponse" message="tns:IServicioVehiculos_IniciarRecorrido_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/IniciarRecorridoServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_IniciarRecorrido_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalizarRecorrido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/FinalizarRecorrido" message="tns:IServicioVehiculos_FinalizarRecorrido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/FinalizarRecorridoResponse" message="tns:IServicioVehiculos_FinalizarRecorrido_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/FinalizarRecorridoServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_FinalizarRecorrido_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VehiculosPorSalir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/VehiculosPorSalir" message="tns:IServicioVehiculos_VehiculosPorSalir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/VehiculosPorSalirResponse" message="tns:IServicioVehiculos_VehiculosPorSalir_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/VehiculosPorSalirServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_VehiculosPorSalir_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarVehiculoCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/InsertarVehiculoCaravana" message="tns:IServicioVehiculos_InsertarVehiculoCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/InsertarVehiculoCaravanaResponse" message="tns:IServicioVehiculos_InsertarVehiculoCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/InsertarVehiculoCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_InsertarVehiculoCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVehiculoCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarVehiculoCaravana" message="tns:IServicioVehiculos_EliminarVehiculoCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarVehiculoCaravanaResponse" message="tns:IServicioVehiculos_EliminarVehiculoCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarVehiculoCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_EliminarVehiculoCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearCaravana" message="tns:IServicioVehiculos_CrearCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearCaravanaResponse" message="tns:IServicioVehiculos_CrearCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_CrearCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarCaravana" message="tns:IServicioVehiculos_EliminarCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarCaravanaResponse" message="tns:IServicioVehiculos_EliminarCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/EliminarCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_EliminarCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaRutas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerListaRutas" message="tns:IServicioVehiculos_ObtenerListaRutas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerListaRutasResponse" message="tns:IServicioVehiculos_ObtenerListaRutas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerListaRutasServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerListaRutas_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanaPlaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanaPlaca" message="tns:IServicioVehiculos_ObtenerCaravanaPlaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanaPlacaResponse" message="tns:IServicioVehiculos_ObtenerCaravanaPlaca_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerCaravanaPlacaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerCaravanaPlaca_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRutasTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRutasTipo" message="tns:IServicioVehiculos_ObtenerRutasTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRutasTipoResponse" message="tns:IServicioVehiculos_ObtenerRutasTipo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerRutasTipoServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerRutasTipo_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculosParaCambio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosParaCambio" message="tns:IServicioVehiculos_ObtenerVehiculosParaCambio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosParaCambioResponse" message="tns:IServicioVehiculos_ObtenerVehiculosParaCambio_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosParaCambioServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerVehiculosParaCambio_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarRutaCaravana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarRutaCaravana" message="tns:IServicioVehiculos_CambiarRutaCaravana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarRutaCaravanaResponse" message="tns:IServicioVehiculos_CambiarRutaCaravana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarRutaCaravanaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_CambiarRutaCaravana_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnirCaravanas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/UnirCaravanas" message="tns:IServicioVehiculos_UnirCaravanas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/UnirCaravanasResponse" message="tns:IServicioVehiculos_UnirCaravanas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/UnirCaravanasServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_UnirCaravanas_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarCarnet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarCarnet" message="tns:IServicioVehiculos_CambiarCarnet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarCarnetResponse" message="tns:IServicioVehiculos_CambiarCarnet_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/CambiarCarnetServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_CambiarCarnet_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitalesAsignados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesAsignados" message="tns:IServicioVehiculos_ObtenerSatelitalesAsignados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesAsignadosResponse" message="tns:IServicioVehiculos_ObtenerSatelitalesAsignados_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesAsignadosServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerSatelitalesAsignados_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitales">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitales" message="tns:IServicioVehiculos_ObtenerSatelitales_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesResponse" message="tns:IServicioVehiculos_ObtenerSatelitales_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerSatelitales_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearSatelital">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearSatelital" message="tns:IServicioVehiculos_CrearSatelital_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearSatelitalResponse" message="tns:IServicioVehiculos_CrearSatelital_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/CrearSatelitalServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_CrearSatelital_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AsignarSatelitalAVehiculo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/AsignarSatelitalAVehiculo" message="tns:IServicioVehiculos_AsignarSatelitalAVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/AsignarSatelitalAVehiculoResponse" message="tns:IServicioVehiculos_AsignarSatelitalAVehiculo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/AsignarSatelitalAVehiculoServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_AsignarSatelitalAVehiculo_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculoSatelitalPorPlaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculoSatelitalPorPlaca" message="tns:IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculoSatelitalPorPlacaResponse" message="tns:IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerVehiculoSatelitalPorPlacaServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerVehiculoSatelitalPorPlaca_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitalPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalPorId" message="tns:IServicioVehiculos_ObtenerSatelitalPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalPorIdResponse" message="tns:IServicioVehiculos_ObtenerSatelitalPorId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalPorIdServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_ObtenerSatelitalPorId_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarError">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioVehiculos/GenerarError" message="tns:IServicioVehiculos_GenerarError_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioVehiculos/GenerarErrorResponse" message="tns:IServicioVehiculos_GenerarError_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServicioVehiculos/GenerarErrorServerErrorWrapperFault" name="ServerErrorWrapperFault" message="tns:IServicioVehiculos_GenerarError_ServerErrorWrapperFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IServicioVehiculos" type="tns:IServicioVehiculos">
+    <wsp:PolicyReference URI="#NetTcpBinding_IServicioVehiculos_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="ObtenerParametrosIniciales">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerParametrosIniciales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSeguimientos">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerSeguimientos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetalleCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerDetalleCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerConductoresCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerConductoresCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltasCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerReportesCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerReportesCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculosCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPuntosEntregaCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPuntosEntregaControl">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerPuntosEntregaControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFuncionesEscolta">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerFuncionesEscolta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarEscolta">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/AgregarEscolta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RetirarEscolta">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/RetirarEscolta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltasPorCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerEscoltasPorCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRefuerzosPorCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosPorCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRefuerzosDisponibles">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerRefuerzosDisponibles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarRefuerzoCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/AgregarRefuerzoCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RetirarRefuerzoCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/RetirarRefuerzoCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEscoltas">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerEscoltas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarNombreCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/CambiarNombreCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerReportesYEstados">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerReportesYEstados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GrabarReporteCarretera">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/GrabarReporteCarretera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRazonesEstado">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerRazonesEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanasDisponibles">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasDisponibles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanasCarretera">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerCaravanasCarretera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IniciarRecorrido">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/IniciarRecorrido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="FinalizarRecorrido">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/FinalizarRecorrido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="VehiculosPorSalir">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/VehiculosPorSalir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarVehiculoCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/InsertarVehiculoCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarVehiculoCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/EliminarVehiculoCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/CrearCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/EliminarCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaRutas">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerListaRutas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCaravanaPlaca">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerCaravanaPlaca" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerRutasTipo">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerRutasTipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculosParaCambio">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerVehiculosParaCambio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarRutaCaravana">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/CambiarRutaCaravana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UnirCaravanas">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/UnirCaravanas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarCarnet">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/CambiarCarnet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitalesAsignados">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalesAsignados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitales">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerSatelitales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSatelital">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/CrearSatelital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AsignarSatelitalAVehiculo">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/AsignarSatelitalAVehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVehiculoSatelitalPorPlaca">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerVehiculoSatelitalPorPlaca" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSatelitalPorId">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/ObtenerSatelitalPorId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarError">
+      <soap12:operation soapAction="http://tempuri.org/IServicioVehiculos/GenerarError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServerErrorWrapperFault">
+        <soap12:fault use="literal" name="ServerErrorWrapperFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioVehiculos">
+    <wsdl:port name="NetTcpBinding_IServicioVehiculos" binding="tns:NetTcpBinding_IServicioVehiculos">
+      <soap12:address location="net.tcp://icolnube02.icoltrans.com.co:4520/ServicioVehiculos.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://icolnube02.icoltrans.com.co:4520/ServicioVehiculos.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

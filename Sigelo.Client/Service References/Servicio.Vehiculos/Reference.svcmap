@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20edf906-569b-48e1-bc77-d8423e529eb7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://icolnube02:8101/ServicioVehiculos.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioVehiculos1.wsdl" MetadataType="Wsdl" ID="6c7b27e3-5c2b-4ad5-9099-a93a5475da71" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?wsdl" />
+    <MetadataFile FileName="ServicioVehiculos10.xsd" MetadataType="Schema" ID="084bb465-497d-42a0-8f5f-dd90cb654bc6" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd9" />
+    <MetadataFile FileName="ServicioVehiculos101.xsd" MetadataType="Schema" ID="5326d550-8b97-4779-92a4-e17f2dc3dcea" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd8" />
+    <MetadataFile FileName="ServicioVehiculos102.xsd" MetadataType="Schema" ID="b963a5fd-7955-485a-be14-93e06a456b48" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd5" />
+    <MetadataFile FileName="ServicioVehiculos103.xsd" MetadataType="Schema" ID="2a445d1d-eeff-471a-86e0-1333bfd3ec42" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd4" />
+    <MetadataFile FileName="ServicioVehiculos104.xsd" MetadataType="Schema" ID="d1845ade-b6e1-42f5-b1fe-c0f51193ced8" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd7" />
+    <MetadataFile FileName="ServicioVehiculos105.xsd" MetadataType="Schema" ID="4e184aaf-5cf6-4412-97e9-d9e355b077af" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd6" />
+    <MetadataFile FileName="ServicioVehiculos106.xsd" MetadataType="Schema" ID="856c55fa-7e54-4fea-b655-059244dc9830" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioVehiculos107.xsd" MetadataType="Schema" ID="a79b5690-055f-4822-8e2b-193adf1501da" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioVehiculos108.xsd" MetadataType="Schema" ID="0898158d-44be-440a-8bce-72c9a4e01288" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServicioVehiculos109.xsd" MetadataType="Schema" ID="d1ffafce-d488-427f-ab92-58ad8a686d38" SourceId="1" SourceUrl="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

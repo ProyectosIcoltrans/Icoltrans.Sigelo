@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>\\10.3.1.28\c%24\inetpub\wwwroot\instaladores\|http://localhost/instaladores/|http://icolcali28.icoltrans.com.co/instaladores/|http://10.3.1.28/instaladores/</PublishUrlHistory>
+    <InstallUrlHistory>http://10.3.1.28/instaladores/|http://icolcali28.icoltrans.com.co:8090/instaladores/|http://icolcali28.icoltrans.com.co/instaladores/</InstallUrlHistory>
+    <SupportUrlHistory>http://controlit</SupportUrlHistory>
+    <UpdateUrlHistory>http://icolcali28.icoltrans.com.co/instaladores/|http://icolcali28.icoltrans.com.co:8090/instaladores/|http://10.3.1.28/instaladores/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>http://controlit</ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

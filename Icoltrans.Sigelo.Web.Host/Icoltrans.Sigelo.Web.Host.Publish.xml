@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Proyectos\Sigelo\WebHostFinal" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="05/07/2013 06:30:55" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Vehiculos.dll" publishTime="05/07/2013 06:30:41" />
+    <file relUrl="ServicioVehiculos.svc" publishTime="11/06/2012 20:16:38" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Nomina.pdb" publishTime="05/07/2013 06:30:42" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Maestros.dll" publishTime="05/07/2013 06:30:41" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Produccion.dll" publishTime="05/07/2013 06:30:42" />
+    <file relUrl="bin/EFExtensions.dll" publishTime="06/30/2010 21:31:10" />
+    <file relUrl="Mg32x32.ico" publishTime="11/06/2012 20:16:38" />
+    <file relUrl="bin/Icoltrans.Sigelo.Web.Host.dll" publishTime="05/07/2013 06:30:43" />
+    <file relUrl="bin/Icoltrans.Sigelo.Data.dll" publishTime="05/07/2013 06:30:39" />
+    <file relUrl="bin/Icoltrans.Sigelo.Comunes.dll" publishTime="05/07/2013 06:30:40" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Nomina.dll" publishTime="05/07/2013 06:30:42" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Produccion.pdb" publishTime="05/07/2013 06:30:42" />
+    <file relUrl="bin/Icoltrans.Sigelo.Rules.Maestros.pdb" publishTime="05/07/2013 06:30:41" />
+  </publishProfile>
+</publishData>

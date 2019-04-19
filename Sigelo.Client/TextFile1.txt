@@ -1,0 +1,27 @@
+﻿    xmlns:igDP="http://infragistics.com/DataPresenter"
+    xmlns:igEditors="http://infragistics.com/Editors"
+
+        <igDP:XamDataGrid Grid.Row="2" DataSource="{Binding CaravanaSeleccionada.Model.Reportes}" 
+                      ScrollingMode="Immediate" Theme="IGTheme" Background="{StaticResource BackgroundBrush}">
+            <igDP:XamDataGrid.FieldLayouts>
+                <igDP:FieldLayout >
+                    <igDP:FieldLayout.Fields>
+                    </igDP:FieldLayout.Fields>
+                </igDP:FieldLayout>
+            </igDP:XamDataGrid.FieldLayouts>
+            <igDP:XamDataGrid.FieldSettings>
+                <igDP:FieldSettings  AllowEdit="False" 
+                                 CellClickAction="SelectRecord" LabelTextAlignment="Center" 
+                                 AllowRecordFiltering="True"
+                                 FilterLabelIconDropDownType="MultiSelectExcelStyle"/>
+            </igDP:XamDataGrid.FieldSettings>
+            <igDP:XamDataGrid.FieldLayoutSettings>
+                <igDP:FieldLayoutSettings AutoGenerateFields="False" AllowAddNew="False" 
+                                          AllowDelete="False" AllowFieldMoving="No" 
+                                          SelectionTypeCell="Default" SelectionTypeField="None"
+                                          SelectionTypeRecord="Extended" AutoArrangeCells="Never" 
+                                          RecordSelectorLocation="None"
+                                          FilterUIType="LabelIcons"
+                                         AllowClipboardOperations="Copy" />
+            </igDP:XamDataGrid.FieldLayoutSettings>
+        </igDP:XamDataGrid>

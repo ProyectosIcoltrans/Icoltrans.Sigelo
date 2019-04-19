@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbSeguridadModelStoreContainer" CdmEntityContainer="SeguridadModelo">
+    <FunctionImportMapping FunctionImportName="ObtenerOpcionesUsuario" FunctionName="dbSeguridadModel.Store.stpQryOpcionesModuloUsr">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Seguridad.OpcionPerfil">
+          <ScalarProperty Name="Identificador" ColumnName="fvcIdentificador" />
+          <ScalarProperty Name="Descripcion" ColumnName="fvcDescripcion" />
+          <ScalarProperty Name="Href" ColumnName="fvcHref" />
+          <ScalarProperty Name="Crear" ColumnName="fbtCrear" />
+          <ScalarProperty Name="Modificar" ColumnName="fbtModificar" />
+          <ScalarProperty Name="Eliminar" ColumnName="fbtEliminar" />
+          <ScalarProperty Name="Confirmacion" ColumnName="fbtConfirmacion" />
+          <ScalarProperty Name="IdOpcion" ColumnName="fIdOpcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbMaestrosModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2000" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="dbMaestrosModelStoreContainer">
+    <EntitySet Name="tblParametros" EntityType="dbMaestrosModel.Store.tblParametros" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+  <EntityType Name="tblParametros">
+    <Key>
+      <PropertyRef Name="fsmIdParametro" />
+    </Key>
+    <Property Name="fsmIdParametro" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fvcDescripcion" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ftyTipoDato" Type="tinyint" Nullable="false" />
+    <Property Name="fvcValor" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="fvcUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="fdtLastUpd" Type="datetime" Nullable="false" />
+    <Property Name="ftsTimestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+</Schema>

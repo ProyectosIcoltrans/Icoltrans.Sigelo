@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECEAAFF7-445D-48E9-BD5E-A6A0E95AD87F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Icoltrans.Sigelo.Data</RootNamespace>
+    <AssemblyName>Icoltrans.Sigelo.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Icoltrans.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mg32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Icoltrans.Sigelo.Data.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DapperExtensions, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DapperExtensions.1.4.4\lib\net40\DapperExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EFExtensions">
+      <HintPath>..\..\Librerias\EFExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DbContextScope.cs" />
+    <Compile Include="Common\Interface\IDbContextScope.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Maestros\MaestrosModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaestrosModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestrosModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaestrosModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\MaestrosModelo.cs" />
+    <Compile Include="Nomina\NominaModel.Context.cs">
+      <DependentUpon>NominaModel.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Nomina\NominaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NominaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Nomina\NominaModelo.cs" />
+    <Compile Include="Produccion\ProduccionModel.Context.cs">
+      <DependentUpon>ProduccionModel.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Produccion\ProduccionModelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProduccionModelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ProduccionModelo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\SeguridadModel.Context.cs">
+      <DependentUpon>SeguridadModel.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Seguridad\SeguridadModelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SeguridadModelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos\Datos.cs" />
+    <Compile Include="Vehiculos\Mappers\SeguimientoMap.cs" />
+    <Compile Include="Vehiculos\VehiculosModel.Context.cs">
+      <DependentUpon>VehiculosModel.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Vehiculos\VehiculosModelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehiculosModelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos\VehiculosModelo.cs" />
+    <Compile Include="Vehiculos\VehiculosModeloDapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Vehiculos\VehiculosModelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VehiculosModelo.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Produccion\ProduccionModelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProduccionModelo.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Icoltrans.snk" />
+    <EntityDeploy Include="Nomina\NominaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NominaModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </EntityDeploy>
+    <EntityDeploy Include="Maestros\MaestrosModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MaestrosModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </EntityDeploy>
+    <None Include="Maestros\MaestrosModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MaestrosModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </None>
+    <None Include="Nomina\NominaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NominaModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Produccion\ProduccionModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProduccionModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="Seguridad\SeguridadModelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SeguridadModelo.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </EntityDeploy>
+    <None Include="Seguridad\SeguridadModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SeguridadModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </None>
+    <None Include="Vehiculos\VehiculosModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VehiculosModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>Icoltrans.Sigelo.Data</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mg32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Comunes\Icoltrans.Sigelo.Comunes.csproj">
+      <Project>{3279ba80-147c-4a5c-96f2-61bf22adf5bc}</Project>
+      <Name>Icoltrans.Sigelo.Comunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Maestros\Icoltrans.Sigelo.Entity.Maestros.csproj">
+      <Project>{229e3de7-da68-4069-b6e7-2545575de18c}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Maestros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Nomina\Icoltrans.Sigelo.Entity.Nomina.csproj">
+      <Project>{d6cb3a4e-6611-4047-8324-9d4958515b5e}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Nomina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Produccion\Icoltrans.Sigelo.Entity.Produccion.csproj">
+      <Project>{223de8dd-6e4d-4316-a5b8-9c65b0ad6b66}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Produccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Seguridad\Icoltrans.Sigelo.Entity.Seguridad.csproj">
+      <Project>{45475063-788c-4f1a-855a-d75cba835647}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Vehiculos\Icoltrans.Sigelo.Entity.Vehiculos.csproj">
+      <Project>{50bd3fbb-c79f-4a7e-b5e2-40c4d1988a80}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Vehiculos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

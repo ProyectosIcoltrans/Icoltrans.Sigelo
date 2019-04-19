@@ -1,0 +1,87 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.ADOR.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.rveh_Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.ADOR.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dprod_Consultas.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.rveh_Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.csproj.ResolveComReference.cache
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Basicas.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\ADODB.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\ADODB.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.ADOR.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.rveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.ADOR.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dprod_Consultas.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Basicas.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.rveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.csproj.ResolveComReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EntityFramework.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Data.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EFExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Data.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EntityFramework.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\DapperExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\DapperExtensions.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EntityFramework.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Data.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Dapper.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\DapperExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EFExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Data.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\EntityFramework.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\DapperExtensions.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\ADODB.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.ADOR.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\bin\Debug\Interop.rveh_Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.ADOR.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dprod_Consultas.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Basicas.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.dveh_Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Interop.rveh_Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.csproj.ResolveComReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.ComProxy\obj\Debug\Icoltrans.Sigelo.Rules.ComProxy.pdb

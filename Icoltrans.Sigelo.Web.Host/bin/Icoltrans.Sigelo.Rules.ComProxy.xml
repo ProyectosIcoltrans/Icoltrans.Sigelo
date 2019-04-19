@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Icoltrans.Sigelo.Rules.ComProxy</name>
+    </assembly>
+    <members>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosConductores.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosManifiestos.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosVehiculo.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera"/> class.
+            </summary>
+        </member>
+        <member name="M:Icoltrans.Sigelo.Rules.ComProxy.VehiculosControlCarretera.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+    </members>
+</doc>

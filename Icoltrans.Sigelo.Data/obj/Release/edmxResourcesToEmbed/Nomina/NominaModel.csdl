@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Nomina" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="NominaModelo" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="EmpleadosGrupoCargo" ReturnType="Collection(Nomina.Escolta1)">
+      <Parameter Name="tyIdGrupoCargo" Mode="In" Type="Byte" />
+      <Parameter Name="smIDSucursal" Mode="In" Type="Int16" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Escolta1">
+    <Property Type="Decimal" Name="Cedula" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Usuario">
+    <Property Type="Int16" Name="fsmIdSucursal" Nullable="false" />
+    <Property Type="String" Name="DesSucursal" Nullable="false" />
+    <Property Type="Guid" Name="fidRol" Nullable="false" />
+    <Property Type="Int16" Name="fsmIdArea" Nullable="false" />
+    <Property Type="String" Name="DesArea" Nullable="false" />
+    <Property Type="Int16" Name="ftyIdCompania" Nullable="false" />
+    <Property Type="String" Name="DesCompania" Nullable="false" />
+    <Property Type="Int16" Name="fsmIdCargo" Nullable="false" />
+    <Property Type="String" Name="DesCargo" Nullable="false" />
+    <Property Type="Int16" Name="fsmCentroCosto" Nullable="false" />
+    <Property Type="String" Name="DesCentro" Nullable="false" />
+    <Property Type="String" Name="NomEmpleado" Nullable="false" />
+    <Property Type="String" Name="fvcIDUbicacion" Nullable="false" />
+    <Property Type="String" Name="CiudadDpto" Nullable="false" />
+    <Property Type="Int16" Name="IdCOperativo" Nullable="false" />
+    <Property Type="Guid" Name="IdPunto" Nullable="false" />
+    <Property Type="Decimal" Name="fnuIdentidad" Nullable="false" />
+  </ComplexType>
+</Schema>

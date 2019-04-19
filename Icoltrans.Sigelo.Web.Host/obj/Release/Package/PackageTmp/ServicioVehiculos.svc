@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Icoltrans.Sigelo.Web.Host.ServicioVehiculos" CodeBehind="ServicioVehiculos.svc.cs" %>

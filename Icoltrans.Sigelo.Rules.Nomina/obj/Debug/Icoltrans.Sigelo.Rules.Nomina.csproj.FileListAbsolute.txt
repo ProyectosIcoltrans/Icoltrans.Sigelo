@@ -1,0 +1,73 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EFExtensions.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.xml
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EFExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\DapperExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\DapperExtensions.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Dapper.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\DapperExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EFExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Data.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Nomina.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\EntityFramework.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Maestros.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Produccion.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Seguridad.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Entity.Vehiculos.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\DapperExtensions.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Rules.Nomina\obj\Debug\Icoltrans.Sigelo.Rules.Nomina.pdb

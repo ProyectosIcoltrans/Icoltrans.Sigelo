@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbMaestrosModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2000" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="dbMaestrosModelStoreContainer">
+          <EntitySet Name="tblParametros" EntityType="dbMaestrosModel.Store.tblParametros" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+        <EntityType Name="tblParametros">
+          <Key>
+            <PropertyRef Name="fsmIdParametro" />
+          </Key>
+          <Property Name="fsmIdParametro" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fvcDescripcion" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="ftyTipoDato" Type="tinyint" Nullable="false" />
+          <Property Name="fvcValor" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="fvcUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="fdtLastUpd" Type="datetime" Nullable="false" />
+          <Property Name="ftsTimestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Icoltrans.Sigelo.Data" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MaestrosModelo" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Parametros" EntityType="Icoltrans.Sigelo.Data.Parametro" />
+        </EntityContainer>
+        <EntityType Name="Parametro">
+          <Key>
+            <PropertyRef Name="IdParametro" />
+          </Key>
+          <Property Type="Int16" Name="IdParametro" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Byte" Name="TipoDato" Nullable="false" />
+          <Property Type="String" Name="Valor" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Usuario" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastUpdate" Nullable="false" />
+          <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbMaestrosModelStoreContainer" CdmEntityContainer="MaestrosModelo">
+          <EntitySetMapping Name="Parametros">
+            <EntityTypeMapping TypeName="Icoltrans.Sigelo.Data.Parametro">
+              <MappingFragment StoreEntitySet="tblParametros">
+                <ScalarProperty Name="Timestamp" ColumnName="ftsTimestamp" />
+                <ScalarProperty Name="LastUpdate" ColumnName="fdtLastUpd" />
+                <ScalarProperty Name="Usuario" ColumnName="fvcUsuario" />
+                <ScalarProperty Name="Valor" ColumnName="fvcValor" />
+                <ScalarProperty Name="TipoDato" ColumnName="ftyTipoDato" />
+                <ScalarProperty Name="Descripcion" ColumnName="fvcDescripcion" />
+                <ScalarProperty Name="IdParametro" ColumnName="fsmIdParametro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MaestrosModel">
+        <EntityTypeShape EntityType="Icoltrans.Sigelo.Data.Parametro" Width="1.5" PointX="3" PointY="1" Height="2.3648893229166665" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

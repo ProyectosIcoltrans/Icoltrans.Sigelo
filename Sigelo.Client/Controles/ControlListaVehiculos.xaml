@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="Icoltrans.Sigelo.Win.Vehiculos.ControlListaVehiculos" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:igDP="http://infragistics.com/DataPresenter"
+             xmlns:igEditors="http://infragistics.com/Editors" xmlns:local="clr-namespace:Icoltrans.Sigelo.Win.Vehiculos" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Name="UserControl" d:DesignHeight="0" d:DesignWidth="0" mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:ConvertidorPrioridad x:Key="ConvertidorPrioridad" />
+        <local:ConvertidorTipoVehiculo x:Key="ConvertidorTipoVehiculo" />
+    </UserControl.Resources>
+    <igDP:XamDataGrid Grid.Row="2"
+                      ActiveDataItem="{Binding Path=CambioNombre.VehiculoSeleccionado,
+                                               Mode=TwoWay}"
+                      Background="{StaticResource BackgroundBrush}"
+                      DataSource="{Binding CaravanaSeleccionada.Model.Vehiculos}"
+                      ScrollingMode="Immediate" Theme="IGTheme">
+        <igDP:XamDataGrid.FieldLayouts>
+            <igDP:FieldLayout>
+                <igDP:FieldLayout.Fields>
+                    <igDP:Field Name="VinculacionId" Width="Auto" Column="0" Label="">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings AllowRecordFiltering="False" LabelClickAction="Nothing">
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type igDP:CellValuePresenter}">
+                                                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                                        <TextBlock VerticalAlignment="Center" FontFamily="Webdings" FontSize="16" Text="i"
+                                                                   Visibility="{Binding Converter={StaticResource ConvertidorPrioridad}}" />
+                                                        <ContentControl Content="{Binding Converter={StaticResource ConvertidorTipoVehiculo}}" />
+                                                    </StackPanel>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="Vinculacion" Width="Auto" Column="0" Label="Vinculación" Row="1">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="PlacaCompleta" Width="Auto" Column="1" Label="Placa" Row="0">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="14" />
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="Manifiesto" Width="Auto" Column="1" Label="Manifiesto" Row="1">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                                <igDP:FieldSettings.EditorStyle>
+                                    <Style TargetType="{x:Type igEditors:XamNumericEditor}">
+                                        <Setter Property="Format" Value="#,##0" />
+                                        <Setter Property="FontSize" Value="14" />
+                                    </Style>
+                                </igDP:FieldSettings.EditorStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="Tipo" Width="Auto" Column="2" Label="Tipo" Row="0" />
+                    <igDP:Field Name="Complemento" Width="Auto" Column="2" Label="Complem." Row="1" />
+                    <igDP:Field Name="Carroceria" Width="Auto" Column="3" Label="Carroc." Row="0" />
+                    <igDP:Field Name="Marca" Width="Auto" Column="3" Label="Marca" Row="1" />
+                    <igDP:Field Name="Ejes" Width="Auto" Column="4" Label="Ejes" Row="0" />
+                    <igDP:Field Name="Modelo" Width="Auto" Column="4" Label="Año" Row="1" />
+                    <igDP:Field Name="Color" Width="Auto" Column="5" Label="Color" Row="0" />
+                    <igDP:Field Name="GPS" Width="Auto" Column="5" Label="GPS" Row="1" />
+                    <igDP:Field Name="Motor" Width="*" Column="6" Label="Motor" Row="0" />
+                    <igDP:Field Name="Chasis" Width="*" Column="6" Label="Chasis" Row="1" />
+                    <igDP:Field Name="Volumen" Width="Auto" Column="7" Label="Volumen" Row="0" />
+                    <igDP:Field Name="Peso" Width="Auto" Column="7" Label="Peso" Row="1" />
+                </igDP:FieldLayout.Fields>
+            </igDP:FieldLayout>
+        </igDP:XamDataGrid.FieldLayouts>
+        <igDP:XamDataGrid.FieldSettings>
+            <igDP:FieldSettings AllowEdit="False" AllowRecordFiltering="True" CellClickAction="SelectRecord" FilterLabelIconDropDownType="MultiSelectExcelStyle" LabelTextAlignment="Center" />
+        </igDP:XamDataGrid.FieldSettings>
+        <igDP:XamDataGrid.FieldLayoutSettings>
+            <igDP:FieldLayoutSettings AllowAddNew="False" AllowClipboardOperations="Copy" AllowDelete="False" AllowFieldMoving="No" AutoArrangeCells="Never" AutoGenerateFields="False" FilterUIType="LabelIcons"
+                                      RecordSelectorLocation="None" SelectionTypeCell="Default" SelectionTypeField="None" SelectionTypeRecord="Single" />
+        </igDP:XamDataGrid.FieldLayoutSettings>
+    </igDP:XamDataGrid>
+</UserControl>

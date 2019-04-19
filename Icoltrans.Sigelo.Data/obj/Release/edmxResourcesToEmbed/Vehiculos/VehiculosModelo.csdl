@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Vehiculos" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="VehiculosModelo" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Rutas" EntityType="Vehiculos.Ruta" />
+  </EntityContainer>
+  <ComplexType Name="Seguimiento">
+    <Property Type="Guid" Name="fidCaravana" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="false" />
+    <Property Type="Int32" Name="finIdRuta" Nullable="false" />
+    <Property Type="String" Name="origen" Nullable="false" />
+    <Property Type="String" Name="destino" Nullable="false" />
+    <Property Type="DateTime" Name="fdtSalida" Nullable="false" />
+    <Property Type="Int32" Name="ftyMinutosReporte" Nullable="false" />
+    <Property Type="Int32" Name="ftyMinutosAlerta" Nullable="false" />
+    <Property Type="Int32" Name="fbtUrbana" Nullable="false" />
+    <Property Type="Int32" Name="finUltimoPunto" Nullable="true" />
+    <Property Type="String" Name="fvcUltimoPunto" Nullable="true" />
+    <Property Type="String" Name="fvcEstado" Nullable="false" />
+    <Property Type="DateTime" Name="fdtUltimoPunto" Nullable="false" />
+    <Property Type="Int32" Name="finSiguientePunto" Nullable="true" />
+    <Property Type="String" Name="fvcSiguientePunto" Nullable="true" />
+    <Property Type="DateTime" Name="fdtSiguientePunto" Nullable="false" />
+    <Property Type="Double" Name="frlDiferencia" Nullable="false" />
+    <Property Type="String" Name="ruta" Nullable="false" />
+    <Property Type="Int16" Name="ftyEstReporte" Nullable="true" />
+    <Property Type="Int16" Name="ftyEstAlerta" Nullable="true" />
+    <Property Type="Int32" Name="Vehiculos" Nullable="false" />
+    <Property Type="String" Name="ftxObservacion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Vehiculo">
+    <Property Type="String" Name="Placa" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="Carroceria" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Chasis" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Color" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Complemento" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="De" Nullable="false" MaxLength="60" />
+    <Property Type="Byte" Name="Ejes" Nullable="false" />
+    <Property Type="Byte" Name="GPS" Nullable="true" />
+    <Property Type="Decimal" Name="Manifiesto" Nullable="true" Precision="20" Scale="0" />
+    <Property Type="String" Name="Marca" Nullable="false" MaxLength="50" />
+    <Property Type="Int16" Name="Modelo" Nullable="false" />
+    <Property Type="String" Name="Motor" Nullable="true" MaxLength="20" />
+    <Property Type="Single" Name="Peso" Nullable="false" />
+    <Property Type="Boolean" Name="Prioridad" Nullable="false" />
+    <Property Type="String" Name="Tipo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Vinculacion" Nullable="false" MaxLength="50" />
+    <Property Type="Single" Name="Volumen" Nullable="false" />
+    <Property Type="Byte" Name="VinculacionId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Conductor">
+    <Property Type="String" Name="Documento" Nullable="true" />
+    <Property Type="Decimal" Name="Numero" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" />
+    <Property Type="String" Name="PrimerApellido" Nullable="true" />
+    <Property Type="String" Name="SegundoApellido" Nullable="true" />
+    <Property Type="String" Name="Direccion" Nullable="true" />
+    <Property Type="String" Name="Ciudad" Nullable="true" />
+    <Property Type="String" Name="Telefonos" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" />
+    <Property Type="String" Name="Licencia" Nullable="true" />
+    <Property Type="String" Name="Categoria" Nullable="true" />
+    <Property Type="DateTime" Name="Vence" Nullable="true" />
+    <Property Type="String" Name="CuentaAhorros" Nullable="true" />
+    <Property Type="String" Name="Banco" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Escolta">
+    <Property Type="Decimal" Name="Identificacion" Nullable="false" />
+    <Property Type="String" Name="Clase" Nullable="true" />
+    <Property Type="String" Name="Nombre" Nullable="true" />
+    <Property Type="String" Name="PrimerApellido" Nullable="true" />
+    <Property Type="String" Name="SegundoApellido" Nullable="true" />
+    <Property Type="String" Name="Telefonos" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" />
+    <Property Type="String" Name="Ciudad" Nullable="true" />
+    <Property Type="String" Name="Direccion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Reporte">
+    <Property Type="DateTime" Name="HoraSistema" Nullable="false" />
+    <Property Type="DateTime" Name="HoraReporte" Nullable="false" />
+    <Property Type="String" Name="PuntoRuta" Nullable="false" />
+    <Property Type="String" Name="Municipio" Nullable="true" />
+    <Property Type="String" Name="Operador" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" />
+    <Property Type="String" Name="Peaje" Nullable="true" />
+    <Property Type="String" Name="Observacion" Nullable="true" />
+    <Property Type="String" Name="Caravanas" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UltimoReporte">
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int16" Name="EstAlerta" Nullable="false" />
+    <Property Type="Int16" Name="EstReporte" Nullable="false" />
+    <Property Type="DateTime" Name="fdtReporte" Nullable="false" />
+    <Property Type="Guid" Name="fidControlCarretera" Nullable="false" />
+    <Property Type="Int32" Name="finIdPuntoRuta" Nullable="true" />
+    <Property Type="Int16" Name="fsmIdEstadoVehiculo" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+    <Property Type="String" Name="fvcEstado" Nullable="false" />
+    <Property Type="String" Name="ftxObservacion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SiguientePuntoControl">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="finIdPuntoRuta" Nullable="false" />
+    <Property Type="Int16" Name="fsmIdTipoPeaje" Nullable="true" />
+    <Property Type="Int16" Name="fsmOrden" Nullable="false" />
+    <Property Type="Int16" Name="ftyMinutosPuntoAnterior" Nullable="true" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+    <Property Type="String" Name="fvcIDUbicacion" Nullable="false" />
+    <Property Type="Int32" Name="finIdRuta" Nullable="true" />
+    <Property Type="Boolean" Name="fbtControl" />
+  </ComplexType>
+  <ComplexType Name="Refuerzo">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Decimal" Name="Identificacion" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" />
+    <Property Type="String" Name="Direccion" Nullable="true" />
+    <Property Type="String" Name="Ubicacion" Nullable="true" />
+    <Property Type="String" Name="Usuario" Nullable="true" />
+    <Property Type="DateTime" Name="UltimaModificacion" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="FuncionEscolta">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="IdFuncionEscolta" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" />
+    <Property Type="String" Name="Usuario" Nullable="true" />
+    <Property Type="DateTime" Name="UltimaModificacion" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="RefuerzoCaravana">
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Guid" Name="fidRefuerzoCaravana" Nullable="false" />
+    <Property Type="Int16" Name="ftyIdFuncionEscolta" Nullable="false" />
+    <Property Type="Decimal" Name="fnuIdentidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="EscoltaCaravana">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="finIdEscoltaCaravana" Nullable="false" />
+    <Property Type="Int16" Name="ftyIdFuncionEscolta" Nullable="false" />
+    <Property Type="Decimal" Name="fnuIdentidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Propietario">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="EstadoVehiculo">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int16" Name="fsmIdEstadoVehiculo" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="false" />
+    <Property Type="Boolean" Name="fbtProgramable" Nullable="false" />
+    <Property Type="Int32" Name="fmsIdRazonEstadoVehiculo" Nullable="false" />
+    <Property Type="Int32" Name="Razon" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="RazonEstado">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+    <Property Type="Int32" Name="fsmIdRazonEstadoV" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CaravanaDisponible">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="fidCaravana" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="false" />
+    <Property Type="String" Name="Ruta" Nullable="false" />
+    <Property Type="Int32" Name="fbtUrbana" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="VehiculoPorSalir">
+    <Property Type="Int32" Name="finNumeroCarnet" Nullable="false" />
+    <Property Type="String" Name="fvcPlaca" Nullable="true" />
+    <Property Type="Int16" Name="fsmModelo" Nullable="false" />
+    <Property Type="String" Name="Completa" Nullable="true" />
+    <Property Type="Decimal" Name="fnuManifiesto" Nullable="false" />
+    <Property Type="String" Name="fvcDescripcion" Nullable="true" />
+    <Property Type="String" Name="Trailer" Nullable="true" />
+    <Property Type="String" Name="fvcNombre" Nullable="true" />
+    <Property Type="String" Name="COrigen" Nullable="true" />
+    <Property Type="String" Name="CDestino" Nullable="true" />
+    <Property Type="String" Name="Conductor" Nullable="true" />
+    <Property Type="Decimal" Name="IdentidadConductor" Nullable="true" />
+    <Property Type="Int32" Name="fbtEnCaravana" Nullable="true" />
+    <Property Type="String" Name="fvcUsuario" Nullable="true" />
+    <Property Type="DateTime" Name="fdtLastUpd" Nullable="false" />
+    <Property Type="Boolean" Name="Prioridad" Nullable="false" />
+    <Property Type="String" Name="Destinos" Nullable="true" />
+    <Property Type="String" Name="Centro" Nullable="true" />
+    <Property Type="Guid" Name="fidCaravana" Nullable="true" />
+    <Property Type="String" Name="Telefono" Nullable="true" />
+    <Property Type="String" Name="Property" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="VehiculoCaravana">
+    <Property Type="Vehiculos.Conductor" Name="Conductor" Nullable="false" />
+    <Property Type="String" Name="CiudadesRecorrido" Nullable="false" />
+    <Property Type="Int32" Name="NumeroCarnet" Nullable="true" DefaultValue="0" />
+    <Property Type="Vehiculos.Vehiculo" Name="Vehiculo" Nullable="false" />
+    <Property Type="Decimal" Name="Manifiesto" Nullable="true" Precision="20" Scale="0" />
+    <Property Type="Boolean" Name="Prioridad" Nullable="false" />
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="String" Name="NombreCaravana" Nullable="false" />
+    <Property Type="String" Name="Origen" Nullable="false" />
+    <Property Type="String" Name="Destino" Nullable="false" />
+    <Property Type="Boolean" Name="NoCambiar" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Ruta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Descripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IdUbicacionOrigen" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IdUbicacionDestino" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="MinutosReporte" Nullable="false" />
+    <Property Type="Byte" Name="MinutosAlerta" Nullable="false" />
+    <Property Type="Byte" Name="Urbana" Nullable="false" />
+    <Property Type="String" Name="Usuario" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastUpdate" Nullable="false" Precision="3" />
+    <Property Type="Binary" Name="Timestamp" Nullable="false" MaxLength="8" FixedLength="true" a:StoreGeneratedPattern="Computed" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <ComplexType Name="CiudadRuta">
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Descripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+  </ComplexType>
+</Schema>

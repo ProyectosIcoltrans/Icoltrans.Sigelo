@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Web.Host" />
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" />
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" />
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://icolnube02:8101/ServicioVehiculos.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Nomina" />
+  <xs:element name="ObtenerParametrosIniciales">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerParametrosInicialesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Web.Host" minOccurs="0" name="ObtenerParametrosInicialesResult" nillable="true" type="q1:ParametrosIniciales" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSeguimientos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="tipo" nillable="true" type="q2:TipoCaravana" />
+        <xs:element minOccurs="0" name="origen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="destino" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSeguimientosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerSeguimientosResult" nillable="true" type="q3:ArrayOfSeguimiento" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDetalleCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDetalleCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Web.Host" minOccurs="0" name="ObtenerDetalleCaravanaResult" nillable="true" type="q5:DetalleCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerConductoresCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q6:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerConductoresCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerConductoresCaravanaResult" nillable="true" type="q7:ConductoresCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltasCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q8:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltasCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerEscoltasCaravanaResult" nillable="true" type="q9:EscoltasCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReportesCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q10:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReportesCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerReportesCaravanaResult" nillable="true" type="q11:ReporteCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculosCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q12:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculosCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerVehiculosCaravanaResult" nillable="true" type="q13:VehiculosCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPuntosEntregaCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q14:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPuntosEntregaCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" minOccurs="0" name="ObtenerPuntosEntregaCaravanaResult" nillable="true" type="q15:PuntosEntregasCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPuntosEntregaControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q16:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPuntosEntregaControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Produccion" minOccurs="0" name="ObtenerPuntosEntregaControlResult" nillable="true" type="q17:PuntosEntregaCaravana2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFuncionesEscolta">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFuncionesEscoltaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerFuncionesEscoltaResult" nillable="true" type="q18:ArrayOfFuncionEscolta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarEscolta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q19:guid" />
+        <xs:element minOccurs="0" name="identificacion" type="xs:decimal" />
+        <xs:element minOccurs="0" name="funcion" type="xs:short" />
+        <xs:element minOccurs="0" name="inicio" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarEscoltaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgregarEscoltaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetirarEscolta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="escoltaCaravana" nillable="true" type="q20:ArrayOfint" />
+        <xs:element minOccurs="0" name="final" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetirarEscoltaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltasPorCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q21:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltasPorCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerEscoltasPorCaravanaResult" nillable="true" type="q22:ArrayOfEscoltaCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRefuerzosPorCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q23:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRefuerzosPorCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerRefuerzosPorCaravanaResult" nillable="true" type="q24:ArrayOfRefuerzoCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRefuerzosDisponibles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRefuerzosDisponiblesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerRefuerzosDisponiblesResult" nillable="true" type="q25:ArrayOfRefuerzo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarRefuerzoCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q26:guid" />
+        <xs:element minOccurs="0" name="identidad" type="xs:decimal" />
+        <xs:element minOccurs="0" name="idFuncionEscolta" type="xs:short" />
+        <xs:element minOccurs="0" name="inicio" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarRefuerzoCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="AgregarRefuerzoCaravanaResult" type="q27:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetirarRefuerzoCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idRefuerzoCaravana" nillable="true" type="q28:ArrayOfguid" />
+        <xs:element minOccurs="0" name="final" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetirarRefuerzoCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEscoltasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Nomina" minOccurs="0" name="ObtenerEscoltasResult" nillable="true" type="q29:ArrayOfEscolta1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarNombreCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravana" type="q30:guid" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarNombreCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReportesYEstados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRuta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerReportesYEstadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerReportesYEstadosResult" nillable="true" type="q31:ReportesYEstados" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GrabarReporteCarretera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravana" type="q32:guid" />
+        <xs:element minOccurs="0" name="idPuntoRuta" type="xs:int" />
+        <xs:element minOccurs="0" name="reporte" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="idEstadoVehiculo" type="xs:short" />
+        <xs:element minOccurs="0" name="idRazon" type="xs:short" />
+        <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idPuntoEntrega" nillable="true" type="q33:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GrabarReporteCarreteraResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRazonesEstado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idEstadoVehiculo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRazonesEstadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerRazonesEstadoResult" nillable="true" type="q34:ArrayOfRazonEstado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanasDisponibles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanasDisponiblesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerCaravanasDisponiblesResult" nillable="true" type="q35:ArrayOfCaravanaDisponible" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanasCarretera">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanasCarreteraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerCaravanasCarreteraResult" nillable="true" type="q36:ArrayOfCaravanaDisponible" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarRecorrido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q37:guid" />
+        <xs:element minOccurs="0" name="hora" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IniciarRecorridoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalizarRecorrido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q38:guid" />
+        <xs:element minOccurs="0" name="hora" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalizarRecorridoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VehiculosPorSalir">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VehiculosPorSalirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="VehiculosPorSalirResult" nillable="true" type="q39:ArrayOfVehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarVehiculoCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q40:guid" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="vehiculos" nillable="true" type="q41:ArrayOfVehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarVehiculoCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarVehiculoCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="caravana" type="q42:guid" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="vehiculosPorSalir" nillable="true" type="q43:ArrayOfVehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarVehiculoCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idRuta" type="xs:int" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="vehiculo" nillable="true" type="q44:VehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CrearCaravanaResult" type="q45:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="idCaravana" nillable="true" type="q46:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerListaRutas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="urbana" type="q47:TipoCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerListaRutasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerListaRutasResult" nillable="true" type="q48:ArrayOfRuta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanaPlaca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCaravanaPlacaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ObtenerCaravanaPlacaResult" type="q49:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRutasTipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="urbana" type="q50:TipoCaravana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerRutasTipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerRutasTipoResult" nillable="true" type="q51:ArrayOfRuta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculosParaCambio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="placaCambio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculosParaCambioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerVehiculosParaCambioResult" nillable="true" type="q52:ArrayOfVehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarRutaCaravana">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravana" type="q53:guid" />
+        <xs:element minOccurs="0" name="idRuta" type="xs:int" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarRutaCaravanaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnirCaravanas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravanaOrigen" type="q54:guid" />
+        <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravanaDestino" type="q55:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnirCaravanasResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarCarnet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idCaravana" type="q56:guid" />
+        <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idPuntoRuta" type="xs:int" />
+        <xs:element minOccurs="0" name="placaOrigen" nillable="true" type="xs:string" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="vehiculoDestino" nillable="true" type="q57:VehiculoPorSalir" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarCarnetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitalesAsignados">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitalesAsignadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerSatelitalesAsignadosResult" nillable="true" type="q58:ArrayOfVehiculoSatelital" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitales">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitalesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerSatelitalesResult" nillable="true" type="q59:ArrayOfSatelital" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearSatelital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearSatelitalResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarSatelitalAVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="placa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idSatelital" type="xs:int" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clave" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarSatelitalAVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculoSatelitalPorPlaca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="placa" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVehiculoSatelitalPorPlacaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerVehiculoSatelitalPorPlacaResult" nillable="true" type="q60:VehiculoSatelital" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitalPorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSatelitalPorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Icoltrans.Sigelo.Entity.Vehiculos" minOccurs="0" name="ObtenerSatelitalPorIdResult" nillable="true" type="q61:Satelital" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarError">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarErrorResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

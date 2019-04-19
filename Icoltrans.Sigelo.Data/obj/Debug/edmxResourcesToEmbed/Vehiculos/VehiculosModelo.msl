@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <Alias Key="Model" Value="ModeloVehiculos" />
+  <Alias Key="Target" Value="ModeloVehiculos.Store" />
+  <EntityContainerMapping CdmEntityContainer="VehiculosModelo" StorageEntityContainer="ModeloVehiculosStoreContainer">
+    <EntitySetMapping Name="Rutas">
+      <EntityTypeMapping TypeName="Vehiculos.Ruta">
+        <MappingFragment StoreEntitySet="tblRutas">
+          <ScalarProperty Name="Timestamp" ColumnName="ftsTimestamp" />
+          <ScalarProperty Name="LastUpdate" ColumnName="fdtLastUpd" />
+          <ScalarProperty Name="Usuario" ColumnName="fvcUsuario" />
+          <ScalarProperty Name="Urbana" ColumnName="fbtUrbana" />
+          <ScalarProperty Name="MinutosAlerta" ColumnName="ftyMinutosAlerta" />
+          <ScalarProperty Name="MinutosReporte" ColumnName="ftyMinutosReporte" />
+          <ScalarProperty Name="IdUbicacionDestino" ColumnName="fvcIDUbicacionDestino" />
+          <ScalarProperty Name="IdUbicacionOrigen" ColumnName="fvcIDUbicacionOrigen" />
+          <ScalarProperty Name="Descripcion" ColumnName="fvcDescripcion" />
+          <ScalarProperty Name="Id" ColumnName="finIdRuta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

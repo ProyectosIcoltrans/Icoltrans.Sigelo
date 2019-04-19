@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbMaestrosModelStoreContainer" CdmEntityContainer="MaestrosModelo">
+    <EntitySetMapping Name="Parametros">
+      <EntityTypeMapping TypeName="Icoltrans.Sigelo.Data.Parametro">
+        <MappingFragment StoreEntitySet="tblParametros">
+          <ScalarProperty Name="Timestamp" ColumnName="ftsTimestamp" />
+          <ScalarProperty Name="LastUpdate" ColumnName="fdtLastUpd" />
+          <ScalarProperty Name="Usuario" ColumnName="fvcUsuario" />
+          <ScalarProperty Name="Valor" ColumnName="fvcValor" />
+          <ScalarProperty Name="TipoDato" ColumnName="ftyTipoDato" />
+          <ScalarProperty Name="Descripcion" ColumnName="fvcDescripcion" />
+          <ScalarProperty Name="IdParametro" ColumnName="fsmIdParametro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

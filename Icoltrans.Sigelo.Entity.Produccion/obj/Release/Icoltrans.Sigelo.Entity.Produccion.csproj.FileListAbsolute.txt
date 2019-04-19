@@ -1,0 +1,11 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll.config
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Release\Icoltrans.Sigelo.Entity.Produccion.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Release\Icoltrans.Sigelo.Entity.Produccion.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Entity.Produccion\obj\Release\Icoltrans.Sigelo.Entity.Produccion.dll

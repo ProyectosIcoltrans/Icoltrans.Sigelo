@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="Icoltrans.Sigelo.Win.Vehiculos.ControlListaConductores" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:igDP="http://infragistics.com/DataPresenter"
+             xmlns:igEditors="http://infragistics.com/Editors" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="UserControl" d:DesignHeight="600"
+             d:DesignWidth="600" mc:Ignorable="d">
+    <igDP:XamDataGrid ActiveDataItem="{Binding Mode=TwoWay,
+                                               Path=CambioNombre.ConductorSeleccionado}"
+                      Background="{StaticResource BackgroundBrush}"
+                      DataSource="{Binding Path=CaravanaSeleccionada.Model.Conductores}"
+                      ScrollingMode="Immediate" Theme="IGTheme">
+        <igDP:XamDataGrid.FieldLayouts>
+            <igDP:FieldLayout>
+                <igDP:FieldLayout.Fields>
+                    <igDP:UnboundField Width="Auto" RowSpan="2">
+                        <igDP:UnboundField.Settings>
+                            <igDP:FieldSettings AllowRecordFiltering="False" LabelClickAction="Nothing">
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="ContentTemplate">
+                                            <Setter.Value>
+                                                <DataTemplate>
+                                                    <TextBlock Text="m" />
+                                                </DataTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                        <Setter Property="FontFamily" Value="Webdings" />
+                                        <Setter Property="FontSize" Value="38" />
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Bottom" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:UnboundField.Settings>
+                    </igDP:UnboundField>
+                    <igDP:Field Name="Numero" Column="1" Label="Identificación">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                                <igDP:FieldSettings.EditorStyle>
+                                    <Style TargetType="{x:Type igEditors:XamTextEditor}">
+                                        <Setter Property="Format" Value="#,##0" />
+                                        <Setter Property="TextAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="14" />
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Style>
+                                </igDP:FieldSettings.EditorStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="Documento" Column="1" Row="1">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="9" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="NombreCompleto" Width="*" Column="2" Label="Conductor">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="14" />
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                                <igDP:FieldSettings.EditorStyle>
+                                    <Style TargetType="{x:Type igEditors:XamTextEditor}">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                    </Style>
+                                </igDP:FieldSettings.EditorStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="LicenciaCompleta" Width="*" Column="2" Label="Licencia" Row="1">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="10" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                                <igDP:FieldSettings.EditorStyle>
+                                    <Style TargetType="{x:Type igEditors:XamTextEditor}">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                    </Style>
+                                </igDP:FieldSettings.EditorStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="DireccionCompleta" Width="Auto" Column="3" Label="Dirección">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="12" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                    <igDP:Field Name="Telefonos" Width="Auto" Column="3" Label="Teléfono" Row="1">
+                        <igDP:Field.Settings>
+                            <igDP:FieldSettings>
+                                <igDP:FieldSettings.CellValuePresenterStyle>
+                                    <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                        <Setter Property="FontSize" Value="10" />
+                                    </Style>
+                                </igDP:FieldSettings.CellValuePresenterStyle>
+                            </igDP:FieldSettings>
+                        </igDP:Field.Settings>
+                    </igDP:Field>
+                </igDP:FieldLayout.Fields>
+            </igDP:FieldLayout>
+        </igDP:XamDataGrid.FieldLayouts>
+        <igDP:XamDataGrid.FieldSettings>
+            <igDP:FieldSettings AllowEdit="False" AllowRecordFiltering="True" CellClickAction="SelectRecord" FilterLabelIconDropDownType="MultiSelectExcelStyle" LabelTextAlignment="Center" />
+        </igDP:XamDataGrid.FieldSettings>
+        <igDP:XamDataGrid.FieldLayoutSettings>
+            <igDP:FieldLayoutSettings AllowAddNew="False" AllowClipboardOperations="Copy" AllowDelete="False" AllowFieldMoving="No" AutoArrangeCells="Never" AutoGenerateFields="False" FilterUIType="LabelIcons"
+                                      RecordSelectorLocation="None" SelectionTypeCell="Default" SelectionTypeField="None" SelectionTypeRecord="Single" />
+        </igDP:XamDataGrid.FieldLayoutSettings>
+    </igDP:XamDataGrid>
+</UserControl>

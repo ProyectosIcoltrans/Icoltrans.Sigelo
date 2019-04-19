@@ -1,0 +1,307 @@
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.config
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.application
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.DataPresenter.v12.2.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.Editors.v12.2.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.v12.2.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\WPFToolkit.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.DataPresenter.v12.2.xml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.Editors.v12.2.xml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\InfragisticsWPF4.v12.2.xml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.xml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Controls.Input.Toolkit.pdb
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.xml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\WPFToolkit.pdb
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\InfragisticsWPF4.DataPresenter.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\InfragisticsWPF4.DataPresenter.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\InfragisticsWPF4.DataPresenter.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\InfragisticsWPF4.Editors.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\InfragisticsWPF4.Editors.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\InfragisticsWPF4.Editors.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\InfragisticsWPF4.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\InfragisticsWPF4.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\InfragisticsWPF4.v12.2.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.cache
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.lref
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.baml
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.g.resources
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Properties.Resources.resources
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.GoogleMapsResource.resources
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.Mensajes.resources
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csproj.GenerateResource.Cache
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.licenses
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.application
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+C:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.application
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.lref
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.g.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Properties.Resources.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.GoogleMapsResource.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.Mensajes.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csproj.GenerateResource.Cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.licenses
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.application
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlGridView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlGridView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\SatelitalView.g.cs
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\SatelitalView.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMensaje.baml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMensaje.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.config
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.application
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Win.Vehiculos.exe
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Drawing.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\Microsoft.Expression.Interactions.xml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\System.Windows.Interactivity.xml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ru\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\de\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\en\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\es\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\fr\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\it\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ja\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\ko\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlGridView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMensaje.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlGridView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMensaje.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlNombreCaravana.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlProgreso.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlError.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMarcador.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlMapa.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaCarga.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaConductores.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaEscoltas.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\NavegationView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\SatelitalView.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\App.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.cache
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos_MarkupCompile.lref
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CambiarCaravanaView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\ControlCarreteraView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CaravanasView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosEntrega.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaPuntosReporte.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Controles\ControlListaVehiculos.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\CrearCaravanaView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\EscoltasView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\FinRecorridoView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\InicioRecorridoView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\RefuerzosView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Vistas\SatelitalView.baml
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.g.resources
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Properties.Resources.resources
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.GoogleMapsResource.resources
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.Resources.Mensajes.resources
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.csproj.GenerateResource.Cache
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.licenses
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.exe.manifest
+D:\Proyectos\Icoltrans.Sigelo\Sigelo.Client\obj\x86\Release\Icoltrans.Sigelo.Win.Vehiculos.application

@@ -1,0 +1,227 @@
+﻿<UserControl
+    x:Class="Icoltrans.Sigelo.Win.Vehiculos.ControlListaCarga"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+    xmlns:igDP="http://infragistics.com/DataPresenter"
+    xmlns:igEditors="http://infragistics.com/Editors"
+    mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="600">
+    <Grid x:Name="LayoutRoot" Background="#FFABABAB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,8" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <StackPanel x:FieldModifier="private" x:Name="InformeOperaciones" Orientation="Horizontal" VerticalAlignment="Center" Cursor="Hand" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonDown" SourceName="InformeOperaciones">
+                        <ei:LaunchUriOrFileAction Path="{Binding RutaInformeOperaciones}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <TextBlock Foreground="White" Text="Ver Reporte"  FontSize="10" Margin="0,0,2,0" VerticalAlignment="Center"/>
+                <Image Source="/Icoltrans.Sigelo.Win.Vehiculos;component/Resources/kthememgr.png" Stretch="Fill" Width="26" Height="26" Margin="0,0,2,0"/>
+            </StackPanel>
+            <StackPanel x:FieldModifier="private" x:Name="ExportarExcel" Orientation="Horizontal" VerticalAlignment="Center" Cursor="Hand" Margin="10,0,0,0">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonDown" SourceName="ExportarExcel">
+                        <i:InvokeCommandAction Command="{Binding ExportarExcelCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <TextBlock Foreground="White" Text="Exportar"  FontSize="10" Margin="0,0,2,0" VerticalAlignment="Center"/>
+                <Image Source="/Icoltrans.Sigelo.Win.Vehiculos;component/Resources/floppy_mount.png" Stretch="Fill" Width="26" Height="26" Margin="0,0,2,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <igDP:XamDataGrid Grid.Row="1" DataSource="{Binding Carga}" 
+                          ScrollingMode="Immediate" Theme="IGTheme" Background="{StaticResource BackgroundBrush}">
+            <igDP:XamDataGrid.Resources>
+                <Style TargetType="{x:Type igDP:SummaryResultPresenter}">
+                    <Setter Property="HorizontalContentAlignment" Value="Right" />
+                    <Setter Property="HorizontalAlignment" Value="Right" />
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Height" Value="Auto"/>
+                </Style>
+                <Style TargetType="{x:Type igDP:SummaryResultsPresenter}">
+                    <Setter Property="HorizontalContentAlignment" Value="Right" />
+                    <Setter Property="HorizontalAlignment" Value="Right" />
+                    <Setter Property="Height" Value="Auto"/>
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="Padding" Value="0"/>
+                </Style>
+
+            </igDP:XamDataGrid.Resources>
+            <igDP:XamDataGrid.FieldLayouts>
+                <igDP:FieldLayout >
+                    <igDP:FieldLayout.SummaryDefinitions>
+                        <igDP:SummaryDefinition Calculator="{x:Static igDP:SummaryCalculator.Sum}" SourceFieldName="finUnidades" DisplayArea="BottomFixed" StringFormat="{}{0:#,##0}" Position="UseSummaryPositionField" PositionFieldName="finUnidades" />
+                        <igDP:SummaryDefinition Calculator="{x:Static igDP:SummaryCalculator.Sum}" SourceFieldName="frlPeso" DisplayArea="BottomFixed" StringFormat="{}{0:n}" Position="UseSummaryPositionField" PositionFieldName="frlPeso" />
+                        <igDP:SummaryDefinition Calculator="{x:Static igDP:SummaryCalculator.Sum}" SourceFieldName="frlVolumen" DisplayArea="BottomFixed" StringFormat="{}{0:n}" Position="UseSummaryPositionField" PositionFieldName="frlVolumen" />
+                    </igDP:FieldLayout.SummaryDefinitions>
+
+                    <igDP:FieldLayout.Fields>
+                        <igDP:UnboundField Width="Auto" RowSpan="2">
+                            <igDP:UnboundField.Settings>
+                                <igDP:FieldSettings AllowRecordFiltering="False" LabelClickAction="Nothing">
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="ContentTemplate">
+                                                <Setter.Value>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="e"></TextBlock>
+                                                    </DataTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Setter Property="FontWeight" Value="Bold" />
+                                            <Setter Property="FontFamily" Value="Webdings" />
+                                            <Setter Property="FontSize" Value="38" />
+                                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                            <Setter Property="VerticalAlignment" Value="Bottom" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                </igDP:FieldSettings>
+                            </igDP:UnboundField.Settings>
+                        </igDP:UnboundField>
+                        <igDP:Field Name="fvcFactura" Label="Factura" Column="1" Row="0"  Width="*">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontWeight" Value="Bold" />
+                                            <Setter Property="FontSize" Value="14" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+                        <igDP:Field Name="fvcDescripcion" Label="Cliente" Column="1" Row="1"  Width="*">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontSize" Value="11" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamTextEditor}" >
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+                        <igDP:Field Name="Punto" Label="Punto" Column="2" Row="0"  Width="*">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontWeight" Value="Bold" />
+                                            <Setter Property="FontSize" Value="16" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamTextEditor}" >
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+                        <igDP:Field Name="fvcDireccion" Label="Dirección" Column="2" Row="1"  Width="*">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontSize" Value="14" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamTextEditor}" >
+                                            <Setter Property="TextWrapping" Value="Wrap" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+                        <igDP:Field Name="finUnidades" Label="Unidad" Column="3" RowSpan="2"  Width="90">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontSize" Value="14" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamNumericEditor}" >
+                                            <Setter Property="Format" Value="#,##0" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        
+                        </igDP:Field>
+                        <igDP:Field Name="frlPeso" Label="Peso" Column="4" RowSpan="2"  Width="90">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings>
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontSize" Value="14" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamNumericEditor}" >
+                                            <Setter Property="Format" Value="n" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+                        <igDP:Field Name="frlVolumen" Label="Volumen" Column="5" RowSpan="2"  Width="90">
+                            <igDP:Field.Settings>
+                                <igDP:FieldSettings >
+                                    <igDP:FieldSettings.CellValuePresenterStyle>
+                                        <Style TargetType="{x:Type igDP:CellValuePresenter}">
+                                            <Setter Property="FontSize" Value="14" />
+                                            <Setter Property="VerticalAlignment" Value="Center" />
+                                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                                        </Style>
+                                    </igDP:FieldSettings.CellValuePresenterStyle>
+                                    <igDP:FieldSettings.EditorStyle>
+                                        <Style TargetType="{x:Type igEditors:XamNumericEditor}" >
+                                            <Setter Property="Format" Value="n" />
+                                        </Style>
+                                    </igDP:FieldSettings.EditorStyle>
+                                </igDP:FieldSettings>
+                            </igDP:Field.Settings>
+                        </igDP:Field>
+
+                    </igDP:FieldLayout.Fields>
+                </igDP:FieldLayout>
+            </igDP:XamDataGrid.FieldLayouts>
+            <igDP:XamDataGrid.FieldSettings>
+                <igDP:FieldSettings  AllowEdit="False" 
+                                     CellClickAction="SelectRecord" LabelTextAlignment="Center" 
+                                     AllowRecordFiltering="True"
+                                     FilterLabelIconDropDownType="MultiSelectExcelStyle" 
+                                     SummaryUIType="SingleSelect"
+                                     SummaryDisplayArea="BottomFixed" />
+            </igDP:XamDataGrid.FieldSettings>
+            <igDP:XamDataGrid.FieldLayoutSettings>
+                <igDP:FieldLayoutSettings AutoGenerateFields="False" AllowAddNew="False" 
+                                          AllowDelete="False" AllowFieldMoving="No" 
+                                          SelectionTypeCell="Default" SelectionTypeField="None"
+                                          SelectionTypeRecord="Extended" AutoArrangeCells="Never" 
+                                          RecordSelectorLocation="None"
+                                          FilterUIType="LabelIcons"
+                                          AllowClipboardOperations="Copy" />
+            </igDP:XamDataGrid.FieldLayoutSettings>
+        </igDP:XamDataGrid>
+    </Grid>
+</UserControl>

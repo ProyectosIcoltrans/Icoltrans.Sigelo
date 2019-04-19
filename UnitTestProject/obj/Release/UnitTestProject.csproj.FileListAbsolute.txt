@@ -1,0 +1,62 @@
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.dll.config
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\EntityFramework.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Data.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Web.Host.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\EFExtensions.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Interop.rveh_Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Interop.ADOR.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Seguridad.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.ComProxy.xml
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Web.Host.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\EntityFramework.xml
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Maestros.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Seguridad.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Produccion.pdb
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.dll
+C:\Proyectos\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\obj\Release\UnitTestProject.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.dll.config
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\UnitTestProject.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\EntityFramework.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Data.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Web.Host.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\EFExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Interop.rveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Interop.ADOR.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.ComProxy.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Web.Host.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\EntityFramework.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Maestros.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Seguridad.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Nomina.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\UnitTestProject\bin\Release\Icoltrans.Sigelo.Rules.Produccion.pdb

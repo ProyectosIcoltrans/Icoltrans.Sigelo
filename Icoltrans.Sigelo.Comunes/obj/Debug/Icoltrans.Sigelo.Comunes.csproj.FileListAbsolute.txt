@@ -1,0 +1,20 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.MensajesError.resources
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.MensajesError.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Debug\Icoltrans.Sigelo.Comunes.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.MensajesError.resources
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Debug\Icoltrans.Sigelo.Comunes.pdb

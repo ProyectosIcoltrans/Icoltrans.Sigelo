@@ -1,0 +1,75 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Web.Host.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Maestros.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Produccion.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Seguridad.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Data.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EFExtensions.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.rveh_Vehiculos.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.ADOR.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.xml
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.xml
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.csprojResolveAssemblyReference.cache
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Web.Host.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Maestros.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Nomina.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Produccion.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Seguridad.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Data.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EFExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.rveh_Vehiculos.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.ADOR.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.xml
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\DapperExtensions.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Dapper.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\DapperExtensions.pdb
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Web.Host.dll.config
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Web.Host.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Maestros.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Seguridad.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Entity.Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Maestros.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Nomina.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Produccion.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Seguridad.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Data.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Dapper.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\DapperExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EFExtensions.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.rveh_Vehiculos.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Interop.ADOR.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\EntityFramework.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Icoltrans.Sigelo.Rules.ComProxy.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\Dapper.xml
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\bin\DapperExtensions.pdb
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Web.Host\obj\Release\Icoltrans.Sigelo.Web.Host.dll

@@ -1,0 +1,15 @@
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.MensajesError.resources
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csprojResolveAssemblyReference.cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.MensajesError.resources
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.dll
+C:\Users\aparedes\Documents\Visual Studio 2012\Projects\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\bin\Release\Icoltrans.Sigelo.Comunes.dll
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csprojResolveAssemblyReference.cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.MensajesError.resources
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.csproj.GenerateResource.Cache
+D:\Proyectos\Icoltrans.Sigelo\Icoltrans.Sigelo.Comunes\obj\Release\Icoltrans.Sigelo.Comunes.dll

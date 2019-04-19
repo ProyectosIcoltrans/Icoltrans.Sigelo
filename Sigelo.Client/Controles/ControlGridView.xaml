@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Icoltrans.Sigelo.Win.Vehiculos.Controles.ControlGridView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:igDP="http://infragistics.com/DataPresenter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    mc:Ignorable="d" 
+    x:Name="RootControl"
+    d:DesignHeight="300" d:DesignWidth="300">
+    <Border BorderBrush="Black" BorderThickness="0.5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <WrapPanel Orientation="Horizontal" Background="LightGray" >
+                <TextBlock 
+                    Text="{Binding Tag, ElementName=RootControl}" 
+                    Margin="8,4" VerticalAlignment="Center" 
+                    FontWeight="Bold" TextTrimming="WordEllipsis" Foreground="#FF3E2F58"/>
+            </WrapPanel>
+
+            <igDP:XamDataGrid 
+                DataSource="{Binding}" Grid.Row="1" 
+                IsSynchronizedWithCurrentItem="True">
+
+                <igDP:XamDataGrid.FieldLayoutSettings>
+                    <igDP:FieldLayoutSettings 
+                        AllowAddNew="True" 
+                        AllowDelete="True" 
+                        AddNewRecordLocation="OnBottomFixed" />
+                </igDP:XamDataGrid.FieldLayoutSettings>
+
+                <igDP:XamDataGrid.FieldLayouts>
+                    <igDP:FieldLayout>
+                        <igDP:FieldLayout.Fields>
+                            <igDP:Field Name="fvcPlaca" Width="100" />
+                            <igDP:Field Name="fvcDescripcion" Width="180" />
+                            <igDP:Field Name="fvcURL" Width="48" />
+                            <igDP:Field Name="fvcUsuario" Width="48" />
+                            <igDP:Field Name="fvcClave" Width="48" />
+                        </igDP:FieldLayout.Fields>
+                    </igDP:FieldLayout>
+                </igDP:XamDataGrid.FieldLayouts>
+            </igDP:XamDataGrid>
+
+        </Grid>
+    </Border>
+
+</UserControl>

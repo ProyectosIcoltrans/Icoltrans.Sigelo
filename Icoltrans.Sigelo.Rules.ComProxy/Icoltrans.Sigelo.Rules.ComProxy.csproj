@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52F43E29-E7EC-436F-B4CB-97E620EF2113}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Icoltrans.Sigelo.Rules.ComProxy</RootNamespace>
+    <AssemblyName>Icoltrans.Sigelo.Rules.ComProxy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Icoltrans.Sigelo.Rules.ComProxy.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>..\..\Activos\MichaelGuerrero.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mg32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Icoltrans.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="VehiculosConductores.cs" />
+    <Compile Include="VehiculosManifiestos.cs" />
+    <Compile Include="ProduccionBasicas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilidades.cs" />
+    <Compile Include="VehiculosNovedades.cs" />
+    <Compile Include="VehiculosVehiculo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icoltrans.snk" />
+    <Compile Include="VehiculosControlCarretera.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mg32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Comunes\Icoltrans.Sigelo.Comunes.csproj">
+      <Project>{3279BA80-147C-4A5C-96F2-61BF22ADF5BC}</Project>
+      <Name>Icoltrans.Sigelo.Comunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Data\Icoltrans.Sigelo.Data.csproj">
+      <Project>{eceaaff7-445d-48e9-bd5e-a6a0e95ad87f}</Project>
+      <Name>Icoltrans.Sigelo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Produccion\Icoltrans.Sigelo.Entity.Produccion.csproj">
+      <Project>{223de8dd-6e4d-4316-a5b8-9c65b0ad6b66}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Produccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Icoltrans.Sigelo.Entity.Vehiculos\Icoltrans.Sigelo.Entity.Vehiculos.csproj">
+      <Project>{50bd3fbb-c79f-4a7e-b5e2-40c4d1988a80}</Project>
+      <Name>Icoltrans.Sigelo.Entity.Vehiculos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000206-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="ADOR">
+      <Guid>{00000300-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="dprod_Consultas">
+      <Guid>{3458C275-A23D-407A-AFD8-56320438E955}</Guid>
+      <VersionMajor>51</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="dveh_Basicas">
+      <Guid>{709D8FB1-5828-4439-8970-FC2D3CF95B72}</Guid>
+      <VersionMajor>40</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="dveh_Vehiculos">
+      <Guid>{EF186964-9C6F-4A43-A349-2C7EC78651B0}</Guid>
+      <VersionMajor>49</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="rveh_Vehiculos">
+      <Guid>{14BBB327-EF33-450B-A167-46ACF6DEA3E3}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
